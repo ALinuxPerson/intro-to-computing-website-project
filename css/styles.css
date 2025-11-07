@@ -1,0 +1,40 @@
+body {
+    /* Account for the height of the global navigation bar */
+    padding-top: 50px;
+}
+
+/* Global Navigation Bar */
+.global-nav {
+    /* Keep the position at the top */
+    position: fixed;
+
+    /* Explicitly specify where in the page the position should be */
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50px;
+
+    /* Ensure that this element sits above all other page content */
+    z-index: 1000;
+}
+
+/* Horizontal Layout of the Global Navigation Bar */
+.global-nav ul {
+    /* Remove the bullets typical of a `ul` */
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* The actual links themselves */
+.global-nav a {
+    /* Remove the default link underline */
+    text-decoration: none;
+
+    /* Add spacing between links */
+    padding: 0 15px;
+    display: block;
+}
