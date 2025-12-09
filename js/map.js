@@ -9,7 +9,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var marker = L.marker(coords).addTo(map)
 
 var logoIcon = L.icon({
-    iconUrl: '/images/biggerbrew_marker.png',
+    iconUrl: '/images/ui-bb-marker.png',
     iconSize: [80, 80],
     iconAnchor: [40, 80],
 })
