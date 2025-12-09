@@ -13,7 +13,7 @@ body {
 }
 
 #aboutUsSection {
-    background-image: url(/images/AboutUsBackground.jpeg);
+    background-image: url(/images/backgrounds/AboutUsBackground.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flexbox;
@@ -81,7 +81,7 @@ body {
 
 /* CREW SECTION */
 #ThecrewSection {
-    background-image: url(/images/TheCrewBackground.jpeg);
+    background-image: url(/images/backgrounds/TheCrewBackground.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flexbox;
