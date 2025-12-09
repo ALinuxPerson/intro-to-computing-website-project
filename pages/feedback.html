@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/biggerbrew_logo.png">
+    <title>Comments/Suggestions</title>
+</head>
+<body id="headerbody">
+<nav>
+    <ul>
+        <li>
+            <button><a href="home.html" class="navy">Home</a></button>
+        </li>
+        <li>
+            <button><a href="aboutus.html" class="navy">About Us</a></button>
+        </li>
+        <li>
+            <button><a href="interactive-menu.html" class="navy">Menu</a></button>
+        </li>
+        <li>
+            <button><a href="feedback.html" class="navy">Feedback</a></button>
+        </li>
+    </ul>
+</nav>
+<h1 id="feedbacktext">YOUR FEEDBACK MATTERS TO US</h1>
+<section id="feedbacksection">
+    <div id="feedbackform">
+        <form action="https://api.web3forms.com/submit" method="POST" id="comments_suggestions">
+            <input type="hidden" name="access_key" value="22dc6e94-66e7-4e1f-acce-d2dd4cb72596">
+            <label for="comments/suggestions">Share your thoughts with us!</label>
+            <textarea name="comments/suggestions" required></textarea>
+            <div class="h-captcha" data-captcha="true"></div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+</body>
+</html>

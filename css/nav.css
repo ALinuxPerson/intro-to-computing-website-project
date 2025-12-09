@@ -1,0 +1,92 @@
+/* Header */
+nav{
+    position: fixed;
+    top: 0;
+    background-color: #44230e;
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s ease;
+}
+
+/* List */
+ul {
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links */
+a {
+    color: #be8f28;
+    text-decoration: none;
+    font-family: cursive;
+}
+
+/* Button */
+button {
+    background-color: transparent;
+    all: unset;
+    border-radius: 5px;
+    border: 2px solid #be8f28;
+}
+
+button:hover{
+    background-color: #be8f28;
+}
+
+a:hover{
+    color: #44230e;
+}
+
+/* Navigation */
+.navy {
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 40px;
+}
+
+@media (max-width: 768px){
+    header {
+        padding: 0.5rem 0 !important; 
+        height: auto !important; 
+        position: static !important; 
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding-top: 1.5rem !important; 
+        padding-bottom: 0.5rem !important;
+    }
+
+    ul {
+        flex-direction: row !important; 
+        justify-content: space-around !important;
+        /* Align items centrally */
+        align-items: center !important;
+        gap: 0.2rem !important; 
+        width: 95% !important; 
+        padding: 0 !important; 
+        margin: 0 !important;
+    }
+
+    a {
+        /* Ensure text is centered within the button/link */
+        display: block !important;
+        text-align: center !important;
+        padding: 0.2rem 0 !important;
+        font-size: 0.8rem !important; /* Smaller font for small screens */
+    }
+
+    button {
+        /* Significantly shrink the button size to prevent overflow */
+        width: 4.5rem !important; 
+        padding: 0.2rem !important;
+    }
+}

@@ -1,40 +1,930 @@
+@import url("hero.css");
+/* Base */
 body {
-    /* Account for the height of the global navigation bar */
-    padding-top: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: #4d2f1b;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
-/* Global Navigation Bar */
-.global-nav {
-    /* Keep the position at the top */
+/* Header */
+nav {
     position: fixed;
+    top: 0;
+    background-color: #44230e;
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s ease;
+}
 
-    /* Explicitly specify where in the page the position should be */
+/* List */
+ul {
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links */
+a {
+    color: #be8f28;
+    text-decoration: none;
+    font-family: cursive;
+}
+
+/* Button */
+button {
+    background-color: transparent;
+    all: unset;
+    border-radius: 5px;
+    border: 2px solid #be8f28;
+}
+
+button:hover {
+    background-color: #be8f28;
+}
+
+a:hover {
+    color: #44230e;
+}
+
+/* Navigation */
+.navy {
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 40px;
+}
+
+/* AboutSection */
+#about {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/images/brown.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#about > div {
+    padding: 24px;
+    width: 50vw;
+}
+
+/* CupImage */
+#cup {
+    width: 37rem;
+    height: 37rem;
+    border-radius: 30px;
+}
+
+/* Statement */
+#statement1 {
+    font-size: 3rem;
+    color: #F2AE1C;
+}
+
+/* Paragraph */
+.paragraph1 {
+    color: rgb(206, 198, 198);
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+/* HeroMenu */
+#heromenu {
+    height: 43rem;
+    width: 100%;
+    background-image: url("/images/3rdbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    text-align: center;
+    /* position: sticky;
+    top: 0; */
+}
+
+/* Section3 */
+#thirdsection {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15rem;
+}
+
+/* Preview */
+.preview {
+    height: 19rem;
+    width: 19rem;
+    border-radius: 35px;
+}
+
+/* JavaDiv */
+#javadiv {
+    display: flexbox;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    left: 4rem;
+    bottom: 4rem;
+}
+
+/* TaroDiv */
+#tarodiv {
+    display: flexbox;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    bottom: 11rem;
+    left: 1.5rem;
+}
+
+/* RedDiv */
+#reddiv {
+    display: flexbox;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    right: 1.8rem;
+}
+
+/* MochaDiv */
+#mochadiv {
+    display: flexbox;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    bottom: 11rem;
+    right: 5rem;
+    background-attachment: fixed;
+}
+
+/* MochaBorder */
+#mocha {
+    border: 3px solid #F2AE1C;
+}
+
+/* RedVelvetBorder */
+#redvelvet {
+    border: 4px solid #D42974;
+}
+
+/* TaroBorder */
+#taro {
+    border: 4px solid #70A198;
+}
+
+/* JavaBorder */
+#java {
+    border: 4px solid #F2AE1C;
+}
+
+/* PreviewText */
+.ptext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    position: relative;
+    bottom: 1.5rem;
+    color: #F2AE1C;
+}
+
+/* PreviewText1 */
+#previewtext1 {
+    position: relative;
+    top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    left: 3rem;
+    color: #F2AE1C;
+}
+
+/* ViewMore */
+#viewmore {
+    position: relative;
+    left: 40rem;
+    top: 10.9rem;
+    font-size: 1.2rem;
+    border-radius: 40px;
+
+    color: #be8f28;
+    text-decoration: none;
+    border: 2px solid #855959;
+    background-color: #44230e;
+    padding: 12px;
+    border-radius: 24px;
+}
+
+
+/* QuoteHero */
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url("/images/BiggerBrewQuote.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+/* Overlay */
+.hero .overlay {
+    position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
-    height: 50px;
-
-    /* Ensure that this element sits above all other page content */
-    z-index: 1000;
+    height: 100%;
 }
 
-/* Horizontal Layout of the Global Navigation Bar */
-.global-nav ul {
-    /* Remove the bullets typical of a `ul` */
-    list-style-type: none;
+/* QuoteContainer */
+.quote-container {
+    position: relative;
+    max-width: 56rem;
+}
 
-    padding: 0;
-    margin: 0;
+
+/* Quote */
+.quote {
+    color: white;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+/* Author */
+.author {
+    margin-top: 1.25;
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* InfoSection */
+.info-section {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    height: 50vh;
+    background-size: cover;
+    background: #4d2f1b url(/images/BiggerBrewFoot.jpg) no-repeat center;
 }
 
-/* The actual links themselves */
-.global-nav a {
-    /* Remove the default link underline */
+#map {
+    border: 2px solid #F2AE1C;
+    height: 30rem;
+    width: 30rem;
+}
+
+.map-btn, .close-modal {
+    text-align: center;
+    background-color: #4d2f1b;
+    color: white;
+    border: 2px solid #F2AE1C;
+    padding: 8px;
+    width: 8rem;
+    cursor: pointer;
+    font-family: 'Comic Sans', cursive;
+}
+
+.map-modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#close {
+    visibility: hidden;
+}
+
+#open {
+    visibility: visible;
+}
+
+/* InfoBox */
+.info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* InfoTitle */
+.info-box h2 {
+    font-size: 2.2rem;
+    color: white;
+}
+
+/* InfoParagraph */
+.info-box p {
+    font-size: 1.2rem;
+    margin: .6rem 0;
+    color: white;
+}
+
+/* VisitLink */
+p.visit {
+    color: #ffbf3b;
+    font-weight: bold;
     text-decoration: none;
-
-    /* Add spacing between links */
-    padding: 0 15px;
-    display: block;
+    font-size: 1.3rem;
 }
+
+.rights {
+    text-align: center;
+    color: white;
+}
+
+.rights > p {
+    margin: 12px;
+}
+
+/* FaqImage */
+#faqimage {
+    display: flex;
+    position: relative;
+    height: 40rem;
+    width: 40rem;
+    top: 2rem;
+    left: 1px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: 2px solid rgb(174, 140, 5);
+
+}
+
+/* FaqBack */
+#Faqback {
+    background-color: rgb(208, 208, 186);
+    height: 50rem;
+}
+
+/* FaqText */
+.faq {
+    position: relative;
+    left: 48rem;
+    bottom: 40rem;
+    word-spacing: 2px;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* FaqTitle */
+#FaQ {
+    color: transparent;
+    -webkit-text-stroke: 1px #bc8611;
+    font-size: 3.2rem;
+}
+
+/* MenuCoffee */
+#coffee {
+    position: relative;
+    background-image: url(/images/DrinksMenuBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 100vh;
+
+}
+
+/* MenuDiv2 */
+#motherDIV2 {
+    position: relative;
+    top: 8rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+/* MenuDiv */
+#motherDIV {
+    position: relative;
+    top: 3.5rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+
+}
+
+/* TableCell */
+table th, table td {
+    padding: 0.5px 12px;
+    text-align: left;
+    border: none;
+}
+
+/* TablePrice */
+table td:last-child {
+    text-align: right;
+    padding-left: 20px;
+}
+
+/* Subtext */
+.sub {
+    color: #8b740b;
+}
+
+/* MenuTitle */
+.h2menu {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: #ffbf3b;
+    -webkit-text-stroke: 1px #131c1a;
+}
+
+/* MenuFood */
+#Foodsection {
+    position: relative;
+    top: 6rem;
+    background-image: url(/images/FoodMenuBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+}
+
+/* FeedbackSection */
+#feedbacksection {
+    background-image: url(/images/BackgroundFeedBack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FormContainer */
+#feedbackform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* FormStyle */
+#comments_suggestions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 27rem;
+    gap: 15px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30rem;
+    max-width: 500px;
+    box-sizing: border-box;
+    backdrop-filter: blur(50px);
+
+}
+
+/* FormInput */
+#comments_suggestions textarea {
+    width: 20rem;
+    color: #3e8e42;
+    min-height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* FormButton */
+#comments_suggestions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* ButtonHover */
+#comments_suggestions button:hover {
+    background-color: #45a049;
+}
+
+/* FormLabel */
+#comments_suggestions label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* FeedHeader */
+#feedheader {
+    position: relative;
+    top: 1.5rem;
+    height: 0rem;
+}
+
+/* HeaderBody */
+#headerbody {
+    background-color: #eedfcc;
+}
+
+/* FeedbackText */
+#feedbacktext {
+    position: relative;
+    display: flex;
+    top: 8rem;
+    justify-content: center;
+    color: #be8f28;
+    font-family: cursive;
+}
+
+@media (max-width: 768px) {
+    /* * Global/Layout Resets 
+     * Ensures no fixed widths cause overflow.
+     */
+    body {
+        /* This prevents any content wider than the screen from triggering a scroll */
+        overflow-x: hidden;
+    }
+
+    #home, #about, #heromenu, #Faqback, #coffee, #Foodsection, #feedbacksection {
+        height: auto;
+        min-height: 30rem;
+        padding-bottom: 2rem;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+    }
+
+    #home > div {
+        flex-direction: column;
+    }
+
+    #about > div {
+        width: 90vw;
+    }
+
+    /*  SECTION 2: HEADER & NAVIGATION (Forced Horizontal Alignment) */
+    header {
+        padding: 0.5rem 0 !important;
+        height: auto !important;
+        position: static !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding-top: 1.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    ul {
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        /* Align items centrally */
+        align-items: center !important;
+        gap: 0.2rem !important;
+        width: 95% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    a {
+        /* Ensure text is centered within the button/link */
+        display: block !important;
+        text-align: center !important;
+        padding: 0.2rem 0 !important;
+        font-size: 0.8rem !important; /* Smaller font for small screens */
+    }
+
+    button {
+        /* Significantly shrink the button size to prevent overflow */
+        width: 4.5rem !important;
+        padding: 0.2rem !important;
+    }
+
+    #homediv {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: static !important;
+        top: auto !important;
+        width: 100% !important;
+        padding: 1rem 0 !important;
+    }
+
+    /* Targets the 'Your coffee experts are here...' */
+    #milk {
+
+        position: static !important;
+        text-align: center !important;
+        width: 90% !important;
+        margin: 1rem auto 0.5rem auto !important;
+        font-size: 1.5rem !important;
+        line-height: 1.2 !important;
+        left: auto !important;
+        right: auto !important;
+    }
+
+    /* Targets the 'Bigger Brew Dasmariñas' text (ID #bigger in desktop CSS) */
+    #bigger {
+        /*Reset desktop position */
+        position: static !important;
+        text-align: center !important;
+        width: 100% !important;
+
+        font-size: 2.8rem !important;
+        margin: 1rem auto 0.5rem auto !important;
+        left: auto !important; /* Remove horizontal offset */
+    }
+
+    /* Targets the tagline MILKTEA • COFFEE • FRAPPE */
+    #das {
+
+        position: static !important;
+        text-align: center !important;
+        width: 90% !important;
+        font-size: 1.2rem !important;
+        margin: 0.5rem auto 1.5rem auto !important;
+        left: auto !important;
+    }
+
+    #map {
+        height: 15rem !important; /* Fixed height for display */
+        width: 90% !important; /* Ensure it takes up most of the screen width */
+        margin: 1rem auto !important; /* Center it horizontally with vertical spacing */
+        border-radius: 10px !important;
+        /* Re-using the existing blue border from desktop styles */
+    }
+
+    #menu {
+        /* Mobile view*/
+        position: static !important;
+        left: auto !important;
+        top: auto !important;
+
+        margin: 2rem auto 3rem auto !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+
+        height: 2.5rem !important;
+        width: 10rem !important;
+        font-size: 1rem !important;
+    }
+
+    /* Targets the logo image */
+    #homelogo {
+
+        width: 70% !important;
+        max-width: 300px !important;
+        height: auto !important;
+        margin: 1rem auto 1rem auto !important;
+        position: static !important;
+    }
+
+    /* 4. About Section  */
+    #statement1, .paragraph1 {
+        position: static;
+        left: 0;
+        font-size: 2rem;
+
+        width: 90%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .paragraph1 {
+        font-size: 1.2rem;
+    }
+
+    #cup {
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 2rem auto;
+        display: block;
+    }
+
+    /* 5. Menu Previews (3rd section) Adjustments */
+    #thirdsection {
+        flex-direction: column;
+        top: 2rem;
+    }
+
+
+    #javadiv, #tarodiv, #reddiv, #mochadiv {
+        position: static;
+        width: 90%; /* Limit container width */
+        margin: 1rem auto;
+        display: block;
+        text-align: center;
+    }
+
+    .preview {
+
+        height: 15rem;
+        width: 15rem;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .ptext, #previewtext1 {
+        position: static;
+        margin-top: 0.5rem;
+        left: 0;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #viewmore {
+
+        position: static;
+        margin: 2rem auto 0;
+        display: block;
+        width: fit-content;
+    }
+
+    /* 6. Footer  */
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 5%;
+        height: 90vh;
+    }
+
+    .info-box {
+        width: 100%;
+        position: static;
+        left: auto;
+        /* margin-bottom: 2rem; */
+        text-align: center;
+        align-items: center;
+    }
+
+    .map-btn {
+        padding: 24px;
+    }
+
+    /* 7. FAQ Section Adjustments */
+    #faqimage {
+        position: static;
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .faq {
+
+        position: static;
+        margin: 1rem 5%;
+        text-align: center;
+    }
+
+    /* 8. Menu Tables Adjustments */
+    #motherDIV, #motherDIV2 {
+        flex-direction: column;
+        align-items: center;
+        top: 1rem;
+        gap: 2rem;
+    }
+
+    table {
+
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* 9. Feedback Form Adjustments */
+    #comments_suggestions {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    #comments_suggestions textarea {
+        width: 80%;
+    }
+}
+
+/*  KEYFRAMES - */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* UNIVERSAL PARALLAX EFFECT */
+#home,
+#about,
+#heromenu,
+.hero,
+.info-section,
+#coffee,
+#Foodsection,
+#feedbacksection {
+    background-attachment: fixed;
+}
+
+/* HOME SECTION ANIMATIONS  */
+#homelogo {
+    opacity: 0;
+    animation: slideInLeft 1.2s ease-out forwards;
+}
+
+#bigger {
+    opacity: 0;
+    animation: slideInRight 1.2s ease-out 0.3s forwards;
+}
+
+#milk {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.8s forwards;
+}
+
+/*  ABOUT SECTION ANIMATIONS */
+#statement1 {
+    opacity: 0;
+    animation: slideInLeft 1.2s ease-out 0.2s forwards;
+}
+
+.paragraph1 {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.6s forwards; /* Paragraph animation */
+}
+
+/*  MENU SECTION ANIMATIONS  */
+.h2menu {
+    opacity: 0;
+    animation: slideInLeft 1s ease-out 0.2s forwards;
+}
+
+/* FAQ SECTION ANIMATIONS */
+#FaQ {
+    opacity: 0;
+    animation: slideInRight 1.2s ease-out 0.4s forwards;
+}
+
+/*  INFO SECTION (FOOTER) ANIMATIONS */
+.info-box h2 {
+    opacity: 0;
+    animation: slideInLeft 1.2s ease-out 0.2s forwards;
+}
+
+
+.info-box p,
+.faq {
+    opacity: 0;
+    /* Use a slight delay to ensure the main title appears first */
+    animation: fadeInUp 1s ease-out 0.8s forwards;
+}
+
+/* Made by 1st Year Students from LPU-C BSCS */

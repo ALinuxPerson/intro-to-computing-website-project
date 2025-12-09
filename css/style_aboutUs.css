@@ -1,0 +1,326 @@
+/* BASE */
+@import url('nav.css');
+
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.p1 {
+    color: #e6b243;
+
+}
+
+#aboutUsSection {
+    background-image: url(/images/AboutUsBackground.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flexbox;
+    justify-content: center;
+    place-items: center;
+    padding: 3px;
+    margin: 2px;
+    height: 53rem;
+}
+
+#image1 {
+    height: 20rem;
+    width: 30rem;
+    border: 2px rgb(187, 79, 37) solid;
+    border-radius: 15px;
+}
+
+#statementAboutUs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.darktransparentBackground, #dark {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+#dark {
+    height: 39rem;
+    width: 55rem;
+}
+
+/* Light Transparent Background */
+#LightTransparentBackground {
+    /* Retaining background and border radius */
+    background-color: rgba(227, 215, 215, 0.3);
+    border-radius: 30px;
+
+    font-size: 16px;
+    padding: 1.5rem;
+    height: auto;
+
+    width: 50rem;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  Styling for paragraphs within the transparent box  */
+#LightTransparentBackground p {
+    color: #44230e;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+
+/* CREW SECTION */
+#ThecrewSection {
+    background-image: url(/images/TheCrewBackground.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flexbox;
+    justify-content: center;
+    place-items: center;
+    padding: 3px;
+    margin: 2px;
+    height: 50rem;
+}
+
+#crew {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.staff {
+    display: flex;
+    align-items: center;
+    display: flex;
+    width: 35rem;
+    height: 6rem;
+}
+
+#JustaContainer, #anothercontainer {
+    display: grid;
+    gap: 20rem;
+}
+
+.emoji {
+    font-size: 7rem;
+}
+
+.Headtext {
+    color: #e6b243;
+    font-size: 3rem;
+    font-style: italic;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+/* Original P tag rule (affects all other paragraphs on the site) */
+p {
+    color: #fdcc62;
+}
+
+#logo {
+    position: relative;
+    max-width: 20rem;
+    mix-blend-mode: multiply;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 768px) {
+    /* 1. Universal Layout & Position Reset */
+    div, section, img, h1, h2, p, ul, li, table, a {
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    body, html {
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+
+    #aboutUsSection, #ThecrewSection {
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        height: auto !important;
+        min-height: 30rem !important;
+        padding: 2rem 0.5rem !important;
+        width: 100% !important;
+    }
+
+    /* 2. Navigation / Header Adjustments (Horizontal) */
+    /* Inside @media screen and (max-width: 768px) */
+    /*  3. About Section  */
+    #aboutUsSection {
+        flex-direction: column !important;
+    }
+
+    .darktransparentBackground, #dark {
+        width: 90% !important;
+        height: auto !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: 1rem auto !important;
+        padding: 1rem !important;
+    }
+
+    #image1 {
+        height: auto !important;
+        width: 90% !important;
+        margin: 1rem auto !important;
+    }
+
+    #LightTransparentBackground {
+        height: auto !important;
+        width: 90% !important;
+        margin: 1rem auto !important;
+        font-size: 1rem !important;
+        text-align: center !important;
+    }
+
+
+    /* 4. Crew Section Fixes */
+    #ThecrewSection {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    #crew {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+        width: 100% !important;
+    }
+
+    .staff {
+        width: 100% !important;
+        height: auto !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        margin: 1rem 0 !important;
+    }
+
+    #JustaContainer, #anothercontainer {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+        width: 100% !important;
+    }
+
+    .Headtext {
+        font-size: 2rem !important;
+        text-align: center !important;
+    }
+
+    .emoji {
+        font-size: 4rem !important;
+        margin: 1rem auto !important;
+    }
+
+    #logo {
+        max-width: 70% !important;
+        margin: 2rem auto !important;
+    }
+}
+
+/* ========================================================= */
+/* --- ALL ANIMATION AND PARALLAX RULES (APPENDED) --- */
+/* ========================================================= */
+
+/* --- KEYFRAMES --- */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* --- UNIVERSAL PARALLAX EFFECT --- */
+#aboutUsSection,
+#ThecrewSection {
+    background-attachment: fixed;
+}
+
+/*  ABOUT US SECTION ANIMATIONS  */
+
+/* Title/Statement Animation */
+#statementAboutUs {
+    opacity: 0;
+    animation: slideInLeft 1.2s ease-out forwards;
+}
+
+/* Image Animation (Slide in from the right) */
+#image1 {
+    opacity: 0;
+    animation: slideInRight 1.2s ease-out 0.3s forwards;
+}
+
+/* Paragraph Container Animation (Fade In from bottom) */
+#LightTransparentBackground {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.8s forwards;
+}
+
+/*  CREW SECTION ANIMATIONS  */
+
+/* Crew Section Main Titles (Headtext) - Slide in from the left */
+.Headtext {
+    opacity: 0;
+    animation: slideInLeft 1.2s ease-out 0.2s forwards;
+}
+
+/* Crew Member Paragraphs (Applies to generic <p> tags in this section) */
+#ThecrewSection p {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.7s forwards;
+}
+
+/* Logo Animation (for the logo image in the crew section) */
+#logo {
+    opacity: 0;
+    animation: slideInRight 1.2s ease-out 0.4s forwards;
+}
+
+/* ========================================================= */

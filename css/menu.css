@@ -1,0 +1,206 @@
+@import url('nav.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/MenuBackground.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-container {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page {
+    width: 30rem;
+    height: 35rem;
+    color: white;
+    position: absolute;
+    transition: 0.5s ease;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #44230e;
+}
+
+.odd > .page {
+    right: 50%;
+    transform: rotateY(90deg);
+    transform-origin: center right;
+}
+
+.even > .page {
+    background-color: #4d2f1b;
+    transform-origin: center left;
+}
+
+.page > div {
+    width: 100%;
+}
+
+.page > div > span {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    width: 13rem;
+}
+
+td:nth-child(2), td:nth-child(3) {
+    text-align: center;
+}
+
+.cover {
+    background-image: url('/images/feb5b6ce8e242dff04815acbb3271457.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.cover > img {
+    width: 20rem;
+}
+
+.slide {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.slide > button {
+    background-color: #ffbf3b;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 4rem;
+    cursor: pointer;
+    color: white;
+    border-bottom: 5px solid #be8f28;
+}
+
+.slide > button:nth-child(1) {
+    border-right: 5px solid #be8f28;
+}
+
+.slide > button:nth-child(2) {
+    border-left: 5px solid #be8f28;
+}
+
+.slide > button:active {
+    border: none;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffbf3b;
+    -webkit-text-stroke: 1px #131c1a;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: #ffbf3b;
+    margin: 0;
+}
+
+hr {
+    color: #ffbf3b
+}
+
+iframe {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 7vh;
+}
+
+@media (max-width: 900px) {
+    body {
+        overflow: hidden;
+        align-items: end;
+    }
+
+    .menu-container {
+        width: 90vw;
+        height: 75vh;
+        margin: 0 auto;
+        /* position: static; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid red; */
+        top: 45%
+    }
+
+    .page {
+        width: 90vw;
+        height: 70vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    img {
+        width: 40vw;
+    }
+
+    .cover > img {
+        width: 20rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    td {
+        font-size: 1.5rem;
+    }
+
+    .slide {
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 35vw;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        -webkit-text-stroke: 0.5px #131c1a;
+    }
+
+    td {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    td {
+        font-size: 0.6rem;
+    }
+}
