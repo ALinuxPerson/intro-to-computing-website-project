@@ -464,7 +464,7 @@ table td:last-child {
 
 /* FeedbackSection */
 #feedbacksection {
-    background-image: url(/images/BackgroundFeedBack.jpg);
+    background-image: url(/images/backgrounds/BackgroundFeedBack.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 50rem;
