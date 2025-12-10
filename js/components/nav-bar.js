@@ -26,7 +26,7 @@ class NavigationBar extends HTMLElement {
                         <a href="/pages/feedback.html" class="navy">Feedback</a>
                     </li>
                     <li>
-                        <a href="/pages/FAQ.html" class="navy">FAQ</a>
+                        <a href="/pages/faq.html" class="navy">FAQ</a>
                     </li>
                 </ul>
             </nav>
