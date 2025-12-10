@@ -1,5 +1,13 @@
 # Bigger Brew Cafe Website Project
 
+<p align="center">
+  <img src="showcase/home-0.png" width="30%" />
+  <img src="showcase/about-0.png" width="30%" />
+  <img src="showcase/faq-0.png" width="30%" />
+</p>
+
+[**View Full Showcase**](SHOWCASE.md)
+
 > **⚠️ IMPORTANT:** Do not try to run this project by simply double-clicking `index.html`! This website uses JavaScript modules and Web Components which require a local server to function correctly due to browser security policies (CORS). Please see the [Local Deployment](#local-deployment) section for instructions.
 
 This is the official front-end repository for the Bigger Brew Cafe website. This project was developed as a college project and is ready for deployment and use by the cafe owner.
