@@ -1,7 +1,20 @@
+<!--
+⚠️ IMPORTANT: Do not try to run this project by simply double-clicking `index.html`! This website uses JavaScript
+              modules and Web Components which require a local server to function correctly due to browser security
+              policies (CORS). Please see the Local Deployment section in the README.md for further instructions.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <script>
+        if (window.location.protocol === 'file:') {
+            alert('⚠️ IMPORTANT: Do not try to run this project just by simply double-clicking `index.html`! This website uses JavaScript ' +
+                'modules and Web Components which require a local server to function correctly due to browser security ' +
+                'policies (CORS). Please see the Local Deployment section in the README.md for further instructions.');
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bigger Brew</title>
