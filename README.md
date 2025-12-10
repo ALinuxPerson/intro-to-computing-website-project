@@ -1,4 +1,7 @@
 # Bigger Brew Cafe Website Project
+
+> **⚠️ IMPORTANT:** Do not try to run this project by simply double-clicking `index.html`! This website uses JavaScript modules and Web Components which require a local server to function correctly due to browser security policies (CORS). Please see the [Local Deployment](#local-deployment) section for instructions.
+
 This is the official front-end repository for the Bigger Brew Cafe website. This project was developed as a college project and is ready for deployment and use by the cafe owner.
 
 ## **Project Overview**
@@ -14,27 +17,41 @@ Key Features:
 This section provides details needed for hosting, maintenance, and future updates.
 
 ### Core Tech Stack (Technologies Used)
- * HTML5: Structure and Content
- * CSS3 (Custom CSS): Styling and Layout
- * JavaScript (Vanilla): Provides all front-end interactivity and logic (e.g., handling buttons, animations, and form responses).
+ * **HTML5**: Structure and Content
+ * **CSS3 (Custom CSS)**: Modular styling with specific stylesheets for different pages and components
+ * **JavaScript (Vanilla)**: Provides all front-end interactivity and logic (e.g., handling buttons, animations, and form responses). Additionally uses standard Custom Elements (e.g., `<nav-bar>`, `<footer-section>`, `<menu-section>`) for reusable UI components and modularity without external frameworks
  
 ### **Project Files**
 The necessary files for deployment are:
 
- * **index.html**: The main website structure, containing all the page content and core JavaScript logic (including the privacy modal functionality).
- * **styles.css**: The primary external stylesheet used for the cafe's custom look and feel.
- * **All External JavaScript files**: These files contain the necessary code for specific application features, such as the map display, menu sorting, and other client-side logic.
- * **README.md**: This documentation file.
- * **images/**: Folder containing background images and the cafe logo.
- 
+ * **index.html**: The landing page containing the Hero, About, and Menu Preview sections.
+ * **pages/**: Directory containing sub-pages (`menu.html`, `aboutus.html`, `faq.html`, `feedback.html`).
+ * **css/**: Directory containing modular stylesheets. `styles.css` is the main entry point, while others (e.g., `menu.css`, `nav.css`) target specific features.
+ * **js/**: Directory containing JavaScript logic.
+   * **components/**: Contains Web Component definitions for the navigation bar, footer, and menu rendering logic.
+ * **images/**: Folder containing background images, product photos, and UI assets.
+
 ### **Deployment Instructions**
 This website consists of static files (HTML, CSS, JS) and can be hosted on nearly any web service.
 
-Upload all files and folders (including the IMAGES folder and all JavaScript files) to your hosting provider's root directory (often named public_html or www). Ensure the index.html file is accessible as the primary page.
+Upload the entire project folder (including `index.html`, `pages/`, `css/`, `js/`, and `images/`) to your hosting provider's root directory. Ensure `index.html` is accessible as the primary page.
+
+#### Local Deployment
+To run this project locally on your machine, you must use a local web server. Opening `index.html` directly in your browser will result in broken functionality (missing navigation, footer, and styles) because the project relies on absolute paths and JavaScript modules that browsers block for local files (`file://` protocol) for security reasons.
+
+**How to run locally:**
+1. Ensure you have Python installed.
+2. Open a terminal/command prompt in the project's root directory.
+3. Run the following command:
+   ```bash
+   python -m http.server
+   ```
+4. Open your browser and go to `http://localhost:8000`.
 
 ### **Maintenance**
-* Menu Updates: To change menu items or prices, you will need to edit the HTML structure directly within the menu sections of the index.html file.
-* Content Updates: To change text on the home or about sections, edit the corresponding sections in index.html.
+* **Menu Updates**: To change menu items or prices, edit **[pages/menu.html](pages/menu.html)**. The menu is built using custom tags (e.g., `<menu-item name="..." price="...">`), making it easy to modify without touching complex code.
+* **Content Updates**: To change text, edit the relevant HTML file (e.g., `index.html` for the home page, `pages/aboutus.html` for the about us page).
+* **Global Elements**: The Navigation Bar and Footer are Web Components defined in `js/components/`. Changes made in those files will reflect across all pages automatically.
  
 ## **Future Development & Updates**
 This website is ready to use, but here are suggestions for future enhancements:
