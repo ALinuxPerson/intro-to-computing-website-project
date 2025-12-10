@@ -1,15 +1,14 @@
-/* Header */
 nav {
     position: fixed;
     top: 0;
     background-color: #44230e;
-    width: 100vw;
+    width: 100%;
     height: 7vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 10000;
     transition: 0.5s ease;
 }
 
@@ -53,7 +52,7 @@ a {
 }
 
 @media (max-width: 768px) {
-    header {
+    nav {
         padding: 0.5rem 0 !important;
         height: auto !important;
         position: static !important;
@@ -62,7 +61,6 @@ a {
         align-items: center !important;
         width: 100% !important;
         padding-top: 1.5rem !important;
-        padding-bottom: 0.5rem !important;
     }
 
     ul {

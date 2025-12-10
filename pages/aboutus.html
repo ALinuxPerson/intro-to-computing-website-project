@@ -4,69 +4,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>About Us</title>
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/aboutus.css">
     <link rel="icon" type="image/x-icon" href="/images/ui/ui-bigger-brew.png">
     <script type="module" src="/js/components.js"></script>
 </head>
 <body>
 <nav-bar></nav-bar>
-<section id="aboutUsSection">
-    <div class="darktransparentBackground" id="dark">
-        <img src="/images/ui/ui-anniversary.jpg" id="image1">
-        <div id="LightTransparentBackground">
-            <div id="LightTransparentBackground">
-                <p class="p1" style="color: rgb(47, 151, 127);">
-                    We launched our franchise on February 14, 2022, after a food tasting that won us over. The early
-                    days were tough with low sales and high expenses, but we pushed through with patience, smart
-                    budgeting, and a lot of faith.
-                </p>
-                <p class="p1" style="color:  rgb(47, 151, 127);">
-                    Three years later, we're still standing, still growing, and still grateful. One of our biggest joys
-                    is helping working students stay in school, and we're proud to support them.
-                </p>
-                <p class="p1" style="color: rgb(244, 254, 53);">
-                    Our team's dedication inspires us every day because they are the heart of our journey.
-                </p>
+
+<main>
+    <section id="about-hero">
+        <div class="container">
+            <div class="about-content">
+                <div class="image-wrapper">
+                    <img src="/images/ui/ui-anniversary.jpg" alt="Anniversary Celebration" class="feature-image">
+                </div>
+                <div class="text-content">
+                    <h1>Our Story</h1>
+                    <p>
+                        We launched our franchise on February 14, 2022, after a food tasting that won us over. The early
+                        days were tough with low sales and high expenses, but we pushed through with patience, smart
+                        budgeting, and a lot of faith.
+                    </p>
+                    <p>
+                        Three years later, we're still standing, still growing, and still grateful. One of our biggest
+                        joys
+                        is helping working students stay in school, and we're proud to support them.
+                    </p>
+                    <p class="highlight">
+                        Our team's dedication inspires us every day because they are the heart of our journey.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section id="ThecrewSection">
-    <h1 class="Headtext">The Crew</h1>
-    <div class="darktransparentBackground" id="crew">
-        <div id="JustaContainer">
-            <div id="Staff1" class="staff">
-                <p class="emoji">&#128513;</p>
-                <p class="StaffStatement">"You’ll always see me with a smile kahit busy. I like keeping things chill so
-                    everyone feels relaxed. For me, work is about making the day smooth and happy for all. Come visit
-                    and let me serve you, you’ll feel at home here."</p>
-            </div>
+    </section>
 
-            <div id="Staff2" class="staff">
-                <p class="emoji">&#128512;</p>
-                <p class="StaffStatement">"I’m the one who likes to joke around while working. Even if it’s rush hour,
-                    I’ll still throw in a funny line. I want people to enjoy not just the food, but also the good
-                    vibes."</p>
+    <section id="crew-section">
+        <div class="container">
+            <h2 class="section-title">The Crew</h2>
+            <div class="crew-grid">
+                <div class="crew-member">
+                    <div class="emoji-avatar">&#128513;</div>
+                    <p class="quote">"You’ll always see me with a smile kahit busy. I like keeping things chill so
+                        everyone feels relaxed. For me, work is about making the day smooth and happy for all. Come
+                        visit and let me serve you, you’ll feel at home here."</p>
+                </div>
+                <div class="crew-member">
+                    <div class="emoji-avatar">&#128512;</div>
+                    <p class="quote">"I’m the one who likes to joke around while working. Even if it’s rush hour, I’ll
+                        still throw in a funny line. I want people to enjoy not just the food, but also the good
+                        vibes."</p>
+                </div>
+
+                <div class="crew-logo-container">
+                    <img src="/images/ui/ui-logo-multiple.jpg" alt="Team Logo" class="crew-logo">
+                </div>
+
+                <div class="crew-member">
+                    <div class="emoji-avatar">&#128516;</div>
+                    <p class="quote">"I’m always full of energy, from morning hanggang gabi. I love serving people and
+                        making them smile back. My goal is simple, spread good vibes and make the day brighter."</p>
+                </div>
+                <div class="crew-member">
+                    <div class="emoji-avatar">&#128540;</div>
+                    <p class="quote">"I’ve worked in different places before but here I really enjoy what I do. You’ll
+                        always catch me with a big smile kasi I love helping people. Guests say they feel recharged
+                        after talking to me and that’s what keeps me going."</p>
+                </div>
             </div>
         </div>
-        <img src="/images/ui/ui-logo-multiple.jpg" alt="logo" id="logo">
-        <div id="anothercontainer">
-            <div id="Staff3" class="staff">
-                <p class="emoji">&#128516;</p>
-                <p class="StaffStatement">"I’m always full of energy, from morning hanggang gabi. I love serving people
-                    and making them smile back. My goal is simple, spread good vibes and make the day brighter."</p>
-            </div>
-
-            <div id="Staff4" class="staff">
-                <p class="emoji">&#128540;</p>
-                <p class="StaffStatement">"I’ve worked in different places before but here I really enjoy what I do.
-                    You’ll always catch me with a big smile kasi I love helping people. Guests say they feel recharged
-                    after talking to me and that’s what keeps me going. So come dine with us and feel the good energy
-                    right away."</p>
-
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+</main>
+<footer-section></footer-section>
 </body>
 </html>

@@ -10,7 +10,7 @@ let currentLocation = 1;
 function openBook() {
     bookScene.classList.remove("close-state");
 
-    if(currentLocation < maxLocation) {
+    if (currentLocation < maxLocation) {
         const currentPaper = papers[currentLocation - 1];
         if (currentPaper) {
             currentPaper.classList.add("flipped");
@@ -23,7 +23,7 @@ function openBook() {
 }
 
 function closeBook() {
-    if(currentLocation > 1) {
+    if (currentLocation > 1) {
         currentLocation--;
         const currentPaper = papers[currentLocation - 1];
         if (currentPaper) {

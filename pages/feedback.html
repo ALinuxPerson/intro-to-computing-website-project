@@ -5,22 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/x-icon" href="/images/ui/ui-bigger-brew.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="module" src="/js/components.js"></script>
-    <title>Comments/Suggestions</title>
+    <title>Comments/Suggestions - Bigger Brew</title>
 </head>
-<body id="headerbody">
+<body>
 <nav-bar></nav-bar>
-<h1 id="feedbacktext">YOUR FEEDBACK MATTERS TO US</h1>
-<section id="feedbacksection">
-    <div id="feedbackform">
-        <form action="https://api.web3forms.com/submit" method="POST" id="comments_suggestions">
-            <input type="hidden" name="access_key" value="22dc6e94-66e7-4e1f-acce-d2dd4cb72596">
-            <label for="comments/suggestions">Share your thoughts with us!</label>
-            <textarea name="comments/suggestions" required></textarea>
-            <div class="h-captcha" data-captcha="true"></div>
-            <button type="submit">Submit</button>
-        </form>
+
+<section id="feedback-hero">
+    <div class="feedback-container">
+        <div class="feedback-header">
+            <h1>We Value Your Feedback</h1>
+            <p>Help us improve your Bigger Brew experience.</p>
+        </div>
+
+        <div class="feedback-form-card">
+            <form action="https://api.web3forms.com/submit" method="POST" id="feedback-form">
+                <input type="hidden" name="access_key" value="22dc6e94-66e7-4e1f-acce-d2dd4cb72596">
+
+                <div class="form-group">
+                    <label for="message">Your Comments or Suggestions</label>
+                    <textarea id="message" name="comments/suggestions" required
+                              placeholder="Tell us what you think..."></textarea>
+                </div>
+
+                <div class="h-captcha" data-captcha="true"></div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Submit Feedback</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
     </div>
 </section>
+<footer-section></footer-section>
 </body>
 </html>

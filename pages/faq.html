@@ -3,49 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
+    <title>FAQ - Bigger Brew</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/x-icon" href="/images/ui/ui-bigger-brew.png">
     <script type="module" src="/js/components.js"></script>
-    <style>
-        body {
-            overflow: hidden;
-        }
-    </style>
 </head>
 <body>
-<section id="Faqback" aria-label="About and FAQ">
-    <header class="header2">
-        <nav-bar></nav-bar>
-    </header>
-    <img src="/images/ui/ui-did-you-know.jpg" id="faqimage">
-    <div class="faq">
-        <h3 id="FaQ">Frequently Asked Questions!</h3>
-        <dl>
-            <dt> ➫ Are you hiring?</dt>
-            <dd>Follow our Facebook page to get updated on our hiring status.</dd>
-            <br>
-            <br>
-            <dt>➫ Do you have discounts?</dt>
-            <dd>Yes! We have seniors citizen discount, Just show us your ID!</dd>
-            <br>
-            <br>
-            <dt>➫ Do you have free Wi-Fi?</dt>
-            <dd>Sadly, we do not have free Wi-Fi.</dd>
-            <br>
-            <br>
-            <dt>➫ Opening hours</dt>
-            <dd>We are open from 11 AM to 11 PM. Closed when there is a very bad weather.</dd>
-            <br>
-            <br>
-            <dt>➫ Are you open on weekends?</dt>
-            <dd>Yes! We are open on weekends at the same time.</dd>
-            <br>
-            <br>
-            <dt>➫ Is outside foods allowed?</dt>
-            <dd>Yes! Outside food is allowed, but please be mindful of our menu offerings.</dd>
-        </dl>
+<header>
+    <nav-bar></nav-bar>
+</header>
+
+<main class="faq-main-container">
+    <div class="faq-split-layout">
+        <div class="faq-image-wrapper">
+            <img src="/images/ui/ui-did-you-know.jpg" alt="Did you know?" class="faq-hero-image">
+        </div>
+
+        <section class="faq-section">
+            <div class="faq-content-wrapper">
+                <h1 class="faq-heading">Frequently Asked Questions</h1>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question">Are you hiring?</h3>
+                        <p class="faq-answer">Follow our Facebook page to get updated on our hiring status.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do you have discounts?</h3>
+                        <p class="faq-answer">Yes! We have senior citizen discounts. Just show us your ID!</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do you have free Wi-Fi?</h3>
+                        <p class="faq-answer">Sadly, we do not have free Wi-Fi at the moment.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">What is your opening hours?</h3>
+                        <p class="faq-answer">We are open from 11 AM to 11 PM. We may close early during severe weather
+                            conditions.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Are you open on weekends?</h3>
+                        <p class="faq-answer">Yes! We are open on weekends with the same operating hours.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Is outside food allowed?</h3>
+                        <p class="faq-answer">Yes! Outside food is allowed, but please be mindful of our menu
+                            offerings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-</section>
+</main>
+<footer-section></footer-section>
 </body>
 </html>

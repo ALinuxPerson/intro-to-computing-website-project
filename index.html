@@ -52,24 +52,27 @@
 
 <!-- Menu Preview Section -->
 <section id="heromenu">
-    <h2 id="previewtext1">We're not your average coffee house, try these soothing coffees!</h2>
+    <div class="container">
+        <h2 id="previewtext1">We're not your average coffee house, try these soothing coffees!</h2>
 
-    <div id="thirdsection">
-        <div id="mochadiv">
-            <img src="/images/products/drink-mocha.jpg" alt="Mocha Frappe" id="mocha" class="preview">
-            <p class="ptext">Mocha Frappe</p>
-        </div>
-        <div id="reddiv">
-            <img src="/images/products/drink-red-velvet.jpg" alt="Red Velvet Milktea" id="redvelvet" class="preview">
-            <p class="ptext">Red Velvet Milktea</p>
-        </div>
-        <div id="tarodiv">
-            <img src="/images/products/drink-taro.jpg" alt="Taro Latte" id="taro" class="preview">
-            <p class="ptext">Taro Latte</p>
-        </div>
-        <div id="javadiv">
-            <img src="/images/products/drink-java.jpg" alt="Java Velvet" id="java" class="preview">
-            <p class="ptext">Java Velvet</p>
+        <div class="menu-preview-grid">
+            <div class="menu-item">
+                <img src="/images/products/drink-mocha.jpg" alt="Mocha Frappe" class="preview-img mocha-border">
+                <p class="ptext">Mocha Frappe</p>
+            </div>
+            <div class="menu-item">
+                <img src="/images/products/drink-red-velvet.jpg" alt="Red Velvet Milktea"
+                     class="preview-img red-border">
+                <p class="ptext">Red Velvet Milktea</p>
+            </div>
+            <div class="menu-item">
+                <img src="/images/products/drink-taro.jpg" alt="Taro Latte" class="preview-img taro-border">
+                <p class="ptext">Taro Latte</p>
+            </div>
+            <div class="menu-item">
+                <img src="/images/products/drink-java.jpg" alt="Java Velvet" class="preview-img java-border">
+                <p class="ptext">Java Velvet</p>
+            </div>
         </div>
     </div>
 </section>
@@ -90,36 +93,7 @@
     </div>
 </section>
 
-<!--Foot-->
-<section class="info-section">
-    <div class="info-box">
-        <h2>Contact Us</h2>
-        <p><strong>Facebook:</strong> Bigger Brew Dasmariñas</p>
-        <p><strong>Tiktok:</strong> Biggerbrewdasma</p>
-        <p><strong>Phone Number:</strong> 09458879235</p>
-    </div>
-
-    <div class="info-box" id="infoo">
-        <h2>Visit Us At</h2>
-        <p>Lot 1 Tirona, St Cor Mangubat<br>St Dasmariñas, Cavite</p>
-        <p class="visit">Visit us today!</p>
-        <button class="map-btn" onclick="toggleModal()">View map</button>
-    </div>
-</section>
-<div class="map-modal" id="close">
-    <div id="map"></div>
-    <button class="close-modal" onclick="toggleModal()">Close map</button>
-</div>
-<div class="rights">
-    <p>© Bigger Brew Dasmariñas <span class="year"></span> - All rights reserved. </p>
-</div>
-<div style="display: none;">
-    <p>Contributors to this website: <br>
-        HTML: Sean & Ivan
-        CSS: Shogo, Razmir, & Jaylen
-        JS: Arwin & Michael
-    </p>
-</div>
+<footer-section></footer-section>
 <script src="/js/map.js"></script>
 </body>
 </html>

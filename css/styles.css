@@ -1,70 +1,26 @@
 @import url("hero.css");
+@import url("faq.css");
+
 /* Base */
+:root {
+    --primary-color: #be8f28;
+    --bg-dark: #4d2f1b;
+    --bg-darker: #44230e;
+    --text-light: #f0f0f0;
+    --accent-yellow: #F2AE1C;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #4d2f1b;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-dark);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
+    color: var(--text-light);
 }
 
-/* Header */
-nav {
-    position: fixed;
-    top: 0;
-    background-color: #44230e;
-    width: 100vw;
-    height: 7vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transition: 0.5s ease;
-}
-
-/* List */
-ul {
-    display: flex;
-    gap: 3rem;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* Links */
-a {
-    color: #be8f28;
-    text-decoration: none;
-    font-family: cursive;
-}
-
-/* Button */
-button {
-    background-color: transparent;
-    all: unset;
-    border-radius: 5px;
-    border: 2px solid #be8f28;
-}
-
-button:hover {
-    background-color: #be8f28;
-}
-
-a:hover {
-    color: #44230e;
-}
-
-/* Navigation */
-.navy {
-    background-color: transparent;
-    padding: 1rem;
-    border-radius: 40px;
-}
-
-/* AboutSection */
 #about {
-    height: 100vh;
+    min-height: 80vh;
     width: 100%;
     background-image: url("/images/backgrounds/bg-texture-brown.jpg");
     background-repeat: no-repeat;
@@ -77,36 +33,39 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 4rem 0;
+    gap: 2rem;
 }
 
 #about > div {
     padding: 24px;
-    width: 50vw;
+    width: 100%;
+    max-width: 600px;
 }
 
-/* CupImage */
 #cup {
-    width: 37rem;
-    height: 37rem;
+    width: 100%;
+    max-width: 500px; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-/* Statement */
 #statement1 {
     font-size: 3rem;
-    color: #F2AE1C;
+    color: var(--accent-yellow);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
 }
 
-/* Paragraph */
 .paragraph1 {
     color: rgb(206, 198, 198);
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.2rem; /* More readable size */
+    line-height: 1.8;
 }
 
-/* HeroMenu */
 #heromenu {
-    height: 43rem;
+    min-height: 80vh;
     width: 100%;
     background-image: url("/images/backgrounds/bg-home-menu-preview.jpg");
     background-repeat: no-repeat;
@@ -114,112 +73,130 @@ a:hover {
     background-position: center;
     background-color: black;
     text-align: center;
-}
-
-/* Section3 */
-#thirdsection {
+    padding: 4rem 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    position: relative;
-    top: 15rem;
+    align-items: center;
 }
 
-/* Preview */
-.preview {
+#previewtext1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.menu-preview-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.preview-img {
     height: 19rem;
     width: 19rem;
+    object-fit: cover;
     border-radius: 35px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
-/* JavaDiv */
-#javadiv {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    position: relative;
-    left: 4rem;
-    bottom: 4rem;
-}
+.mocha-border { border: 4px solid #F2AE1C; }
+.red-border { border: 4px solid #D42974; }
+.taro-border { border: 4px solid #70A198; }
+.java-border { border: 4px solid #F2AE1C; }
 
-/* TaroDiv */
-#tarodiv {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    position: relative;
-    bottom: 11rem;
-    left: 1.5rem;
-}
-
-/* RedDiv */
-#reddiv {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    position: relative;
-    right: 1.8rem;
-}
-
-/* MochaDiv */
-#mochadiv {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    position: relative;
-    bottom: 11rem;
-    right: 5rem;
-    background-attachment: fixed;
-}
-
-/* MochaBorder */
-#mocha {
-    border: 3px solid #F2AE1C;
-}
-
-/* RedVelvetBorder */
-#redvelvet {
-    border: 4px solid #D42974;
-}
-
-/* TaroBorder */
-#taro {
-    border: 4px solid #70A198;
-}
-
-/* JavaBorder */
-#java {
-    border: 4px solid #F2AE1C;
-}
-
-/* PreviewText */
 .ptext {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    position: relative;
-    bottom: 1.5rem;
-    color: #F2AE1C;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
-/* PreviewText1 */
-#previewtext1 {
+.hero {
     position: relative;
-    top: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    left: 3rem;
-    color: #F2AE1C;
+    padding: 4rem 1rem;
+    background-color: #2c1810;
+    text-align: center;
+}
+
+.quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+
+.quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.author {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--accent-yellow);
+}
+
+.info-section {
+    background-color: #1a0f0a;
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #ccc;
+}
+
+.info-box h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.info-box p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    #statement1 {
+        font-size: 2rem;
+    }
+    
+    #previewtext1 {
+        font-size: 1.8rem;
+    }
+    
+    .preview-img {
+        width: 15rem;
+        height: 15rem;
+    }
 }
 
 /* QuoteHero */
 .hero {
     position: relative;
-    height: 80vh;
+    min-height: 50vh;
     background: url("/images/backgrounds/bg-quote-overlay.jpg") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1.25rem;
+    padding: 4rem 1rem;
 }
 
 /* Overlay */
@@ -229,12 +206,14 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: rgba(0,0,0,0.4); /* Add overlay for readability */
 }
 
 /* QuoteContainer */
 .quote-container {
     position: relative;
     max-width: 56rem;
+    z-index: 1;
 }
 
 
@@ -243,13 +222,16 @@ a:hover {
     color: white;
     font-size: 2rem;
     line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 /* Author */
 .author {
-    margin-top: 1.25px;
+    margin-top: 1.5rem;
     font-size: 1.8rem;
-    color: white;
+    color: #F2AE1C;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 /* InfoSection */
@@ -258,7 +240,8 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     gap: 50px;
-    height: 50vh;
+    min-height: 50vh;
+    padding: 4rem 2rem;
     background-size: cover;
     background: #4d2f1b url(/images/backgrounds/bg-footer.jpg) no-repeat center;
 }
@@ -267,6 +250,8 @@ a:hover {
     border: 2px solid #F2AE1C;
     height: 30rem;
     width: 30rem;
+    max-width: 90vw;
+    max-height: 70vh;
 }
 
 .map-btn, .close-modal {
@@ -281,16 +266,18 @@ a:hover {
 }
 
 .map-modal {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    z-index: 10001;
 }
 
 #close {
@@ -339,43 +326,126 @@ p.visit {
     margin: 12px;
 }
 
-/* FaqImage */
-#faqimage {
+.faq-main-container {
+    min-height: 100vh;
+    background-color: #f4f1ea;
+    padding-top: 8vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-split-layout {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 90%;
+    margin: 2rem auto;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.faq-section {
+    flex: 1.5;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.faq-image-wrapper {
+    flex: 1;
+}
+
+.faq-hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.faq-content-wrapper {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-heading {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    color: #44230e;
+    margin-bottom: 2rem;
     position: relative;
-    height: 40rem;
-    width: 40rem;
-    top: 2rem;
-    left: 1px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-    border: 2px solid rgb(174, 140, 5);
-
+    padding-bottom: 1rem;
 }
 
-/* FaqBack */
-#Faqback {
-    background-color: rgb(208, 208, 186);
-    height: 50rem;
+.faq-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #be8f28;
+    border-radius: 2px;
 }
 
-/* FaqText */
-.faq {
-    position: relative;
-    left: 48rem;
-    bottom: 40rem;
-    word-spacing: 2px;
-    color: green;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-style: italic;
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
-/* FaqTitle */
-#FaQ {
-    color: transparent;
-    -webkit-text-stroke: 1px #bc8611;
-    font-size: 3.2rem;
+.faq-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    color: #44230e;
+    margin: 0 0 0.5rem 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.faq-question::before {
+    content: 'Q.';
+    color: #be8f28;
+    margin-right: 0.5rem;
+    font-weight: 900;
+}
+
+.faq-answer {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+    padding-left: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .faq-split-layout {
+        flex-direction: column;
+    }
+    
+    .faq-image-wrapper {
+        width: 100%;
+    }
+    
+    .faq-content-wrapper {
+        padding: 2rem;
+    }
+    
+    .faq-heading {
+        font-size: 2rem;
+    }
 }
 
 /* MenuCoffee */
@@ -443,100 +513,132 @@ table td:last-child {
     height: 50rem;
 }
 
-/* FeedbackSection */
-#feedbacksection {
-    background-image: url(/images/backgrounds/bg-feedback-hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* FormContainer */
-#feedbackform {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Feedback Page Styles */
+#feedback-hero {
     min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/backgrounds/bg-feedback-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 2rem 4rem;
     box-sizing: border-box;
 }
 
-/* FormStyle */
-#comments_suggestions {
+.feedback-container {
+    width: 100%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 27rem;
-    gap: 15px;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 30rem;
-    max-width: 500px;
-    box-sizing: border-box;
-    backdrop-filter: blur(50px);
-
+    gap: 2rem;
 }
 
-/* FormInput */
-#comments_suggestions textarea {
-    width: 20rem;
-    color: #3e8e42;
-    min-height: 200px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    resize: vertical;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-/* FormButton */
-#comments_suggestions button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
+.feedback-header {
+    text-align: center;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
 }
 
-/* ButtonHover */
-#comments_suggestions button:hover {
-    background-color: #45a049;
-}
-
-/* FormLabel */
-#comments_suggestions label {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-/* FeedHeader */
-#feedheader {
-    position: relative;
-    top: 1.5rem;
-    height: 0rem;
-}
-
-/* HeaderBody */
-#headerbody {
-    background-color: #eedfcc;
-}
-
-/* FeedbackText */
-#feedbacktext {
-    position: relative;
-    display: flex;
-    top: 8rem;
-    justify-content: center;
-    color: #be8f28;
+.feedback-header h1 {
     font-family: cursive;
+    color: #be8f28;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.feedback-header p {
+    font-size: 1.2rem;
+    color: #eedfcc;
+}
+
+.feedback-form-card {
+    background-color: rgba(68, 35, 14, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(190, 143, 40, 0.3);
+}
+
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #be8f28;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#feedback-form textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid #5c3a21;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    resize: vertical;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+#feedback-form textarea:focus {
+    outline: none;
+    border-color: #be8f28;
+    box-shadow: 0 0 0 3px rgba(190, 143, 40, 0.2);
+}
+
+.submit-btn {
+    background-color: #be8f28;
+    color: #44230e;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    align-self: center;
+    min-width: 200px;
+}
+
+.submit-btn:hover {
+    background-color: #d4a02e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(190, 143, 40, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feedback-header h1 {
+        font-size: 2rem;
+    }
+    
+    .feedback-form-card {
+        padding: 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -548,7 +650,7 @@ table td:last-child {
         overflow-x: hidden;
     }
 
-    #home, #about, #heromenu, #Faqback, #coffee, #Foodsection, #feedbacksection {
+    #home, #about, #heromenu, #coffee, #Foodsection {
         height: auto;
         min-height: 30rem;
         padding-bottom: 2rem;
@@ -603,140 +705,13 @@ table td:last-child {
         padding: 0.2rem !important;
     }
 
-    #homediv {
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        position: static !important;
-        top: auto !important;
-        width: 100% !important;
-        padding: 1rem 0 !important;
-    }
 
-    /* Targets the 'Your coffee experts are here...' */
-    #milk {
-
-        position: static !important;
-        text-align: center !important;
-        width: 90% !important;
-        margin: 1rem auto 0.5rem auto !important;
-        font-size: 1.5rem !important;
-        line-height: 1.2 !important;
-        left: auto !important;
-        right: auto !important;
-    }
-
-    /* Targets the 'Bigger Brew Dasmariñas' text (ID #bigger in desktop CSS) */
-    #bigger {
-        /*Reset desktop position */
-        position: static !important;
-        text-align: center !important;
-        width: 100% !important;
-
-        font-size: 2.8rem !important;
-        margin: 1rem auto 0.5rem auto !important;
-        left: auto !important; /* Remove horizontal offset */
-    }
-
-    /* Targets the tagline MILKTEA • COFFEE • FRAPPE */
-    #das {
-
-        position: static !important;
-        text-align: center !important;
-        width: 90% !important;
-        font-size: 1.2rem !important;
-        margin: 0.5rem auto 1.5rem auto !important;
-        left: auto !important;
-    }
 
     #map {
-        height: 15rem !important; /* Fixed height for display */
-        width: 90% !important; /* Ensure it takes up most of the screen width */
-        margin: 1rem auto !important; /* Center it horizontally with vertical spacing */
+        height: 15rem !important;
+        width: 90% !important;
+        margin: 1rem auto !important;
         border-radius: 10px !important;
-        /* Re-using the existing blue border from desktop styles */
-    }
-
-    #menu {
-        /* Mobile view*/
-        position: static !important;
-        left: auto !important;
-        top: auto !important;
-
-        margin: 2rem auto 3rem auto !important;
-
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-
-
-        height: 2.5rem !important;
-        width: 10rem !important;
-        font-size: 1rem !important;
-    }
-
-    /* Targets the logo image */
-    #homelogo {
-
-        width: 70% !important;
-        max-width: 300px !important;
-        height: auto !important;
-        margin: 1rem auto 1rem auto !important;
-        position: static !important;
-    }
-
-    /* 4. About Section  */
-    #statement1, .paragraph1 {
-        position: static;
-        left: 0;
-        font-size: 2rem;
-
-        width: 90%;
-        margin: 1rem auto;
-        text-align: center;
-    }
-
-    .paragraph1 {
-        font-size: 1.2rem;
-    }
-
-    #cup {
-        position: static;
-        width: 90%;
-        height: auto;
-        margin: 2rem auto;
-        display: block;
-    }
-
-    /* 5. Menu Previews (3rd section) Adjustments */
-    #thirdsection {
-        flex-direction: column;
-        top: 2rem;
-    }
-
-
-    #javadiv, #tarodiv, #reddiv, #mochadiv {
-        position: static;
-        width: 90%; /* Limit container width */
-        margin: 1rem auto;
-        display: block;
-        text-align: center;
-    }
-
-    .preview {
-
-        height: 15rem;
-        width: 15rem;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .ptext, #previewtext1 {
-        position: static;
-        margin-top: 0.5rem;
-        left: 0;
-        font-size: 1.5rem;
-        text-align: center;
     }
 
     /* 6. Footer  */
@@ -760,21 +735,7 @@ table td:last-child {
         padding: 24px;
     }
 
-    /* 7. FAQ Section Adjustments */
-    #faqimage {
-        position: static;
-        width: 90%;
-        height: auto;
-        display: block;
-        margin: 1rem auto;
-    }
 
-    .faq {
-
-        position: static;
-        margin: 1rem 5%;
-        text-align: center;
-    }
 
     /* 8. Menu Tables Adjustments */
     #motherDIV, #motherDIV2 {
@@ -790,15 +751,7 @@ table td:last-child {
         margin: 0 auto;
     }
 
-    /* 9. Feedback Form Adjustments */
-    #comments_suggestions {
-        width: 90%;
-        max-width: 90%;
-    }
 
-    #comments_suggestions textarea {
-        width: 80%;
-    }
 }
 
 /*  KEYFRAMES - */
@@ -842,8 +795,7 @@ table td:last-child {
 .hero,
 .info-section,
 #coffee,
-#Foodsection,
-#feedbacksection {
+#Foodsection {
     background-attachment: fixed;
 }
 
@@ -881,7 +833,7 @@ table td:last-child {
 }
 
 /* FAQ SECTION ANIMATIONS */
-#FaQ {
+.faq-heading {
     opacity: 0;
     animation: slideInRight 1.2s ease-out 0.4s forwards;
 }
@@ -894,7 +846,7 @@ table td:last-child {
 
 
 .info-box p,
-.faq {
+.faq-grid {
     opacity: 0;
     /* Use a slight delay to ensure the main title appears first */
     animation: fadeInUp 1s ease-out 0.8s forwards;
