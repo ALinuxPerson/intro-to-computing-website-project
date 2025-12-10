@@ -14,19 +14,19 @@ class NavigationBar extends HTMLElement {
             <nav>
                 <ul>
                     <li>
-                        <button><a href="/index.html" class="navy">Home</a></button>
+                        <a href="/index.html" class="navy">Home</a>
                     </li>
                     <li>
-                        <button><a href="/pages/aboutus.html" class="navy">About Us</a></button>
+                        <a href="/pages/aboutus.html" class="navy">About Us</a>
                     </li>
                     <li>
-                        <button><a href="/pages/interactive-menu.html" class="navy">Menu</a></button>
+                        <a href="/pages/menu.html" class="navy">Menu</a>
                     </li>
                     <li>
-                        <button><a href="/pages/feedback.html" class="navy">Feedback</a></button>
+                        <a href="/pages/feedback.html" class="navy">Feedback</a>
                     </li>
                     <li>
-                        <button><a href="/pages/FAQ.html" class="navy">FAQ</a></button>
+                        <a href="/pages/FAQ.html" class="navy">FAQ</a>
                     </li>
                 </ul>
             </nav>

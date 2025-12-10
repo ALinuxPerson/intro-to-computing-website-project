@@ -1,6 +1,4 @@
 /* BASE */
-@import url('nav.css');
-
 body {
     background-color: #000000;
     margin: 0;
@@ -16,7 +14,7 @@ body {
     background-image: url(/images/backgrounds/bg-about-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flexbox;
+    display: flex;
     justify-content: center;
     place-items: center;
     padding: 3px;
@@ -84,7 +82,7 @@ body {
     background-image: url(/images/backgrounds/bg-crew-hero.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flexbox;
+    display: flex;
     justify-content: center;
     place-items: center;
     padding: 3px;

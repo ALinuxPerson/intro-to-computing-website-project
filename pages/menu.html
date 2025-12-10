@@ -3,737 +3,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drink Menu</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>Coffee Shop Menu</title>
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="module" src="/js/components.js"></script>
+    <script type="module" src="/js/components/menu.js"></script>
 </head>
 <body>
-<!-- COFFEE -->
-<section id="coffee">
-    <nav-bar></nav-bar>
-    <div id="motherDIV">
-        <div class="section" id="coffeeDIV">
-            <h2 class="h2menu">COFFEE</h2>
-
-            <div class="sub">Iced Coffee</div>
-            <table>
-                <tr>
-                    <th>Item</th>
-                    <th>16oz</th>
-                    <th>22oz</th>
-                    <th>1L</th>
-                </tr>
-                <tr>
-                    <td>IC1 Iced Americano</td>
-                    <td>29</td>
-                    <td>39</td>
-                    <td>59</td>
-                </tr>
-                <tr>
-                    <td>IC2 Coffee Latte</td>
-                    <td>49</td>
-                    <td>59</td>
-                    <td>79</td>
-                </tr>
-                <tr>
-                    <td>IC3 Cheesecake</td>
-                    <td>49</td>
-                    <td>59</td>
-                    <td>79</td>
-                </tr>
-                <tr>
-                    <td>IC4 Toffee Caramel</td>
-                    <td>49</td>
-                    <td>59</td>
-                    <td>79</td>
-                </tr>
-                <tr>
-                    <td>IC5 Salted Caramel</td>
-                    <td>49</td>
-                    <td>59</td>
-                    <td>79</td>
-                </tr>
-                <tr>
-                    <td>IC6 Dark Mocha</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>IC7 Cookie Crumble</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>IC8 Matcha</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>IC9 Dark Choco</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>IC10 Spanish Latte</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-            </table>
-            <div class="sub">Special Iced Coffee</div>
-            <table>
-                <tr>
-                    <th>Item</th>
-                    <th>16oz</th>
-                    <th>22oz</th>
-                </tr>
-                <tr>
-                    <td>SC1 Caramel Macchiato</td>
-                    <td>80</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>SC2 Hazelnut</td>
-                    <td>80</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>SC3 Vanilla Latte</td>
-                    <td>80</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>SC4 Taro Latte</td>
-                    <td>80</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>SC5 Dirty Matcha</td>
-                    <td>80</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>SC6 Cafe Con Leche</td>
-                    <td>80</td>
-                    <td>90</td>
-                </tr>
-            </table>
+<nav-bar></nav-bar>
+<div class="book-scene">
+    <div class="book" id="book">
+        <div class="paper" id="p1">
+            <div class="face front cover-page">
+                <div class="cover-content">
+                    <img src="/images/ui/ui-menu-book-cover.jpg" alt="cover">
+                </div>
+            </div>
+            <div class="face back">
+                <div class="page-content">
+                    <menu-section>
+                        <menu-img src="/images/products/drink-coffee-latte.jpg" alt="Coffee"></menu-img>
+                        <menu-content name="Iced Coffee" columns="16oz,22oz,1L">
+                            <menu-item code="IC1" name="Iced Americano" 16oz="29" 22oz="39" 1l="59"></menu-item>
+                            <menu-item code="IC2" name="Coffee Latte" 16oz="49" 22oz="59" 1l="79"></menu-item>
+                            <menu-item code="IC3" name="Cheesecake" 16oz="49" 22oz="59" 1l="79"></menu-item>
+                            <menu-item code="IC4" name="Toffee Caramel" 16oz="49" 22oz="59" 1l="79"></menu-item>
+                            <menu-item code="IC5" name="Salted Caramel" 16oz="49" 22oz="59" 1l="79"></menu-item>
+                            <menu-item code="IC6" name="Dark Mocha" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                            <menu-item code="IC7" name="Cookie Crumble" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                            <menu-item code="IC8" name="Matcha" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                            <menu-item code="IC9" name="Dark Choco" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                            <menu-item code="IC10" name="Spanish Latte" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                        </menu-content>
+                    </menu-section>
+                    <hr>
+                    <menu-section>
+                        <menu-content name="Special Iced Coffee" columns="16oz,22oz">
+                            <menu-item code="SC1" name="Hazelnut" 16oz="80" 22oz="90"></menu-item>
+                            <menu-item code="SC2" name="Hazelnut" 16oz="80" 22oz="90"></menu-item>
+                            <menu-item code="SC3" name="Vanilla Latte" 16oz="80" 22oz="90"></menu-item>
+                            <menu-item code="SC4" name="Taro Latte" 16oz="80" 22oz="90"></menu-item>
+                            <menu-item code="SC5" name="Dirty Matcha" 16oz="80" 22oz="90"></menu-item>
+                            <menu-item code="SC6" name="Cafe Con Leehe" 16oz="80" 22oz="90"></menu-item>
+                        </menu-content>
+                        <menu-img src="/images/products/drink-taro.jpg" alt="Taro"></menu-img>
+                    </menu-section>
+                </div>
+            </div>
+        </div>
+        <div class="paper" id="p2">
+            <div class="face front">
+                <div class="page-content">
+                    <h2>Afforda Milktea</h2>
+                    <div class="split-container">
+                        <div style="flex: 1;">
+                            <table>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>16oz</th>
+                                    <th>22oz</th>
+                                    <th>1L</th>
+                                </tr>
+                                <tr>
+                                    <td>AM1 Classic Milktea</td>
+                                    <td>29</td>
+                                    <td>39</td>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <td>AM2 Cheesecake</td>
+                                    <td>29</td>
+                                    <td>39</td>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <td>AM3 Cookies and Cream</td>
+                                    <td>29</td>
+                                    <td>39</td>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <td>AM4</td>
+                                    <td>29</td>
+                                    <td>39</td>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <td>AM5 Salted Caramel</td>
+                                    <td>29</td>
+                                    <td>39</td>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <td>AM6 Belgian Dark Chocolate</td>
+                                    <td>39</td>
+                                    <td>49</td>
+                                    <td>79</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div style="flex: 1;">
+                            <table>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>16oz</th>
+                                    <th>22oz</th>
+                                    <th>1L</th>
+                                </tr>
+                                <tr>
+                                    <td>AM7 Belgian Chocolate</td>
+                                    <td>39</td>
+                                    <td>49</td>
+                                    <td>79</td>
+                                </tr>
+                                <tr>
+                                    <td>AM8 Red Velvet</td>
+                                    <td>39</td>
+                                    <td>49</td>
+                                    <td>79</td>
+                                </tr>
+                                <tr>
+                                    <td>AM9 Wintermelon</td>
+                                    <td>39</td>
+                                    <td>49</td>
+                                    <td>79</td>
+                                </tr>
+                                <tr>
+                                    <td>AM10 Javachip</td>
+                                    <td>39</td>
+                                    <td>49</td>
+                                    <td>79</td>
+                                </tr>
+                                <tr>
+                                    <td>AM11 Okinawa</td>
+                                    <td>39</td>
+                                    <td>49</td>
+                                    <td>79</td>
+                                </tr>
+                                <tr>
+                                    <td>AM12 Dark Mocha</td>
+                                    <td>39</td>
+                                    <td>49</td>
+                                    <td>79</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <hr>
+                    <menu-section>
+                        <menu-content name="Premium Milktea" columns="16oz,22oz,1L">
+                            <menu-item code="PM1" name="Belgian Dark Chocolate" 16oz="55" 22oz="64" 1l="85"></menu-item>
+                            <menu-item code="PM2" name="Belgian Chocolate" 16oz="55" 22oz="64" 1l="85"></menu-item>
+                            <menu-item code="PM3" name="Cookies and Cream" 16oz="55" 22oz="64" 1l="85"></menu-item>
+                            <menu-item code="PM4" name="Wintermelon" 16oz="55" 22oz="64" 1l="85"></menu-item>
+                            <menu-item code="PM5" name="Okinawa" 16oz="55" 22oz="64" 1l="85"></menu-item>
+                            <menu-item code="PM6" name="Cheesecake" 16oz="55" 22oz="64" 1l="85"></menu-item>
+                        </menu-content>
+                        <menu-img src="/images/products/drink-dark-choco-milktea.jpg"
+                                  alt="Dark Choco Milktea"></menu-img>
+                    </menu-section>
+                </div>
+            </div>
+            <div class="face back">
+                <div class="page-content">
+                    <menu-section>
+                        <menu-img src="/images/products/drink-milo-dino.jpg" alt="Milo Dinosheeesh!!!"></menu-img>
+                        <menu-content name="Signature Milktea" columns="16oz,22oz">
+                            <menu-item code="SM1" name="Choco Butternut Donut" 16oz="75" 22oz="85"></menu-item>
+                            <menu-item code="SM2" name="Strawberry Cheesecake" 16oz="75" 22oz="85"></menu-item>
+                            <menu-item code="SM3" name="Caramel Buttercake" 16oz="75" 22oz="85"></menu-item>
+                            <menu-item code="SM4" name="Oreo Strawberry Cheesecake" 16oz="75" 22oz="85"></menu-item>
+                            <menu-item code="SM5" name="Taro Cheesecake Overload" 16oz="75" 22oz="85"></menu-item>
+                            <menu-item code="SM6" name="Tiger Sugar" 16oz="75" 22oz="85"></menu-item>
+                            <menu-item code="SM7" name="Milo Dino Sheeesh" 16oz="75" 22oz="85"></menu-item>
+                        </menu-content>
+                    </menu-section>
+                    <menu-section>
+                        <menu-content name="Coffee Based" columns="16oz,22oz,1L">
+                            <menu-item code="CO1" name="Javachip" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                            <menu-item code="CO2" name="Dark Mocha" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                            <menu-item code="CO3" name="Coffee Jelly" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                            <menu-item code="CO4" name="Mocha Jelly" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                            <menu-item code="CO5" name="Caramel Coffee" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                            <menu-item code="CO6" name="Toffee Caramel" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                        </menu-content>
+                        <menu-img src="/images/products/drink-mango-berry-frappe.jpg"
+                                  alt="Mango Berry Frappe"></menu-img>
+                    </menu-section>
+                </div>
+            </div>
         </div>
 
-        <!-- MILKTEA -->
-        <div class="section" id="milkteaDIV">
-            <h2 class="h2menu">MILKTEA</h2>
+        <div class="paper" id="p3">
+            <div class="face front">
+                <div class="page-content">
+                    <menu-section>
+                        <menu-content name="Cream Based" columns="16oz,22oz,1L">
+                            <menu-item code="CR1" name="Strawberry Jam" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                            <menu-item code="CR2" name="Dark Mocha Mint" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                            <menu-item code="CR3" name="Cookie Crumble" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                            <menu-item code="CR4" name="Cookies and Cream" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                            <menu-item code="CR5" name="Taro Cheesecake" 16oz="59" 22oz="69" 1l="89"></menu-item>
+                        </menu-content>
+                        <menu-content name="Dairy Boba" columns="16oz,22oz,1L">
+                            <menu-item code="DB1" name="Strawberry" 16oz="45" 22oz="55" 1l="95"></menu-item>
+                            <menu-item code="DB2" name="Taro" 16oz="45" 22oz="55" 1l="95"></menu-item>
+                            <menu-item code="DB3" name="Matcha" 16oz="45" 22oz="55" 1l="95"></menu-item>
+                            <menu-item code="DB4" name="Dark Choco" 16oz="45" 22oz="55" 1l="95"></menu-item>
+                        </menu-content>
+                    </menu-section>
+                    <hr>
+                    <menu-section>
+                        <menu-content name="Fruit Tea" columns="16oz,22oz">
+                            <menu-item code="FT1" name="Lychee" 16oz="35" 22oz="45"></menu-item>
+                            <menu-item code="FT2" name="Green Apple" 16oz="35" 22oz="45"></menu-item>
+                            <menu-item code="FT3" name="Blueberry" 16oz="35" 22oz="45"></menu-item>
+                            <menu-item code="FT4" name="Strawberry" 16oz="35" 22oz="45"></menu-item>
+                            <menu-item code="FT5" name="Lemon" 16oz="35" 22oz="45"></menu-item>
+                        </menu-content>
+                        <menu-content name="Soda Pop" columns="16oz,22oz">
+                            <menu-item code="SP1" name="Lychee" 16oz="60" 22oz="75"></menu-item>
+                            <menu-item code="SP2" name="Green Apple" 16oz="60" 22oz="75"></menu-item>
+                            <menu-item code="SP3" name="Blueberry" 16oz="60" 22oz="75"></menu-item>
+                            <menu-item code="SP4" name="Strawberry" 16oz="60" 22oz="75"></menu-item>
+                        </menu-content>
+                    </menu-section>
+                </div>
+            </div>
+            <div class="face back">
+                <div class="page-content">
+                    <img src="/images/products/drink-hot.jpg" alt="Hot Drinks"
+                         style="width: 15rem; display: block; margin: 0 auto; border-radius: 1rem;">
+                    <menu-section>
 
-            <div class="sub">Afforda Milktea</div>
-            <table>
-                <tr>
-                    <th>Item</th>
-                    <th>16oz</th>
-                    <th>22oz</th>
-                    <th>1L</th>
-                </tr>
-                <tr>
-                    <td>AM1 Classic Milktea</td>
-                    <td>29</td>
-                    <td>39</td>
-                    <td>69</td>
-                </tr>
-                <tr>
-                    <td>AM2 Cheesecake</td>
-                    <td>29</td>
-                    <td>39</td>
-                    <td>69</td>
-                </tr>
-                <tr>
-                    <td>AM3 Cookies and Cream</td>
-                    <td>29</td>
-                    <td>39</td>
-                    <td>69</td>
-                </tr>
-                <tr>
-                    <td>AM4</td>
-                    <td>29</td>
-                    <td>39</td>
-                    <td>69</td>
-                </tr>
-                <tr>
-                    <td>AM5 Salted Caramel</td>
-                    <td>29</td>
-                    <td>39</td>
-                    <td>69</td>
-                </tr>
-                <tr>
-                    <td>AM6 Belgian Dark Chocolate</td>
-                    <td>39</td>
-                    <td>49</td>
-                    <td>79</td>
-                </tr>
-                <tr>
-                    <td>AM7 Belgian Chocolate</td>
-                    <td>39</td>
-                    <td>49</td>
-                    <td>79</td>
-                </tr>
-                <tr>
-                    <td>AM8 Red Velvet</td>
-                    <td>39</td>
-                    <td>49</td>
-                    <td>79</td>
-                </tr>
-                <tr>
-                    <td>AM9 Wintermelon</td>
-                    <td>39</td>
-                    <td>49</td>
-                    <td>79</td>
-                </tr>
-                <tr>
-                    <td>AM10 Javachip</td>
-                    <td>39</td>
-                    <td>49</td>
-                    <td>79</td>
-                </tr>
-                <tr>
-                    <td>AM11 Okinawa</td>
-                    <td>39</td>
-                    <td>49</td>
-                    <td>79</td>
-                </tr>
-                <tr>
-                    <td>AM12 Dark Mocha</td>
-                    <td>39</td>
-                    <td>49</td>
-                    <td>79</td>
-                </tr>
-            </table>
-
-            <div class="sub">Premium Milktea</div>
-            <table>
-                <tr>
-                    <th>Item</th>
-                    <th>16oz</th>
-                    <th>22oz</th>
-                    <th>1L</th>
-                </tr>
-                <tr>
-                    <td>PM1 Belgian Dark Chocolate</td>
-                    <td>55</td>
-                    <td>65</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>PM2 Belgian Chocolate</td>
-                    <td>55</td>
-                    <td>65</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>PM3 Cookies and Cream</td>
-                    <td>55</td>
-                    <td>65</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>PM4 Wintermelon</td>
-                    <td>55</td>
-                    <td>65</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>PM5 Okinawa</td>
-                    <td>55</td>
-                    <td>65</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>PM6 Cheesecake</td>
-                    <td>55</td>
-                    <td>65</td>
-                    <td>85</td>
-                </tr>
-            </table>
-
-            <div class="sub">Signature Milktea</div>
-            <table>
-                <tr>
-                    <th>Item</th>
-                    <th>16oz</th>
-                    <th>22oz</th>
-                </tr>
-                <tr>
-                    <td>SM1 Choco Butternut Donut</td>
-                    <td>75</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>SM2 Strawberry Cheesecake</td>
-                    <td>75</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>SM3 Caramel Buttercake</td>
-                    <td>75</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>SM4 Oreo Strawberry Cheesecake</td>
-                    <td>75</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>SM5 Taro Cheesecake Overload</td>
-                    <td>75</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>SM6 Tiger Sugar</td>
-                    <td>75</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>SM7 Milo Dino Sheeesh</td>
-                    <td>75</td>
-                    <td>85</td>
-                </tr>
-            </table>
+                        <menu-content name="Hot Drinks" columns="12oz">
+                            <menu-item code="HD1" name="Americano" 12oz="39"></menu-item>
+                            <menu-item code="HD2" name="Caramel Macchiato" 12oz="59"></menu-item>
+                            <menu-item code="HD3" name="Hazelnut" 12oz="59"></menu-item>
+                            <menu-item code="HD4" name="Spanish Latte" 12oz="59"></menu-item>
+                            <menu-item code="HD5" name="Chocolate" 12oz="59"></menu-item>
+                            <menu-item code="HD6" name="Vanilla" 12oz="59"></menu-item>
+                            <menu-item code="HD7" name="Purple Yam Latte" 12oz="59"></menu-item>
+                            <menu-item code="HD8" name="Wintermelon" 12oz="59"></menu-item>
+                        </menu-content>
+                        <menu-content name="Add-Ons" columns="Price">
+                            <menu-item name="Pearl" price="10"></menu-item>
+                            <menu-item name="Nata" price="10"></menu-item>
+                            <menu-item name="Crystal Boba" price="15"></menu-item>
+                            <menu-item name="Coffee Jelly" price="15"></menu-item>
+                            <menu-item name="Whipcream" price="20"></menu-item>
+                            <menu-item name="Cheesecake" price="20"></menu-item>
+                            <menu-item name="Syrup" price="20"></menu-item>
+                            <menu-item name="Espresso Shot" price="20"></menu-item>
+                            <menu-item name="Crushed" price="20"></menu-item>
+                        </menu-content>
+                    </menu-section>
+                </div>
+            </div>
+        </div>
+        <div class="paper" id="p4">
+            <div class="face front">
+                <div class="page-content">
+                    <menu-section>
+                        <menu-content name="Buy 1 Take 1 Sandwiches" columns="Price">
+                            <menu-item name="Burger Sandwich" price="59"></menu-item>
+                            <menu-item name="Cheese Burger" price="69"></menu-item>
+                            <menu-item name="Ham Sandwich" price="59"></menu-item>
+                            <menu-item name="Ham with Cheese" price="69"></menu-item>
+                            <menu-item name="Egg Sandwich" price="59"></menu-item>
+                            <menu-item name="Egg Sandwich w/ Cheese" price="69"></menu-item>
+                            <menu-item name="Classic Hotdog" price="69"></menu-item>
+                            <menu-item name="Classic Hotdog w/ Cheese" price="79"></menu-item>
+                        </menu-content>
+                    </menu-section>
+                    <menu-section>
+                        <menu-content name="Siomai/Hotdog/Lumpia" columns="Price">
+                            <menu-item name="Pork Siomai" price="25"></menu-item>
+                            <menu-item name="Lumpia Siomai" price="25"></menu-item>
+                            <menu-item name="Hotdog" price="20"></menu-item>
+                        </menu-content>
+                        <menu-content name="Fries" columns="Price">
+                            <menu-item name="Fries (Large)" price="50"></menu-item>
+                        </menu-content>
+                        <menu-content name="Cheese Sticks" columns="Price">
+                            <menu-item name="6 Pcs" price="20"></menu-item>
+                            <menu-item name="10 Pcs" price="30"></menu-item>
+                            <menu-item name="18 Pcs" price="50"></menu-item>
+                        </menu-content>
+                    </menu-section>
+                    <menu-section>
+                        <menu-content name="Street Food" columns="Price">
+                            <menu-item name="Kikiam" price="20"></menu-item>
+                            <menu-item name="Squid Ball" price="20"></menu-item>
+                            <menu-item name="Fishball" price="20"></menu-item>
+                        </menu-content>
+                        <menu-content name="Combo Snacks" columns="Price">
+                            <menu-item name="Burger w/ Fries" price="59"></menu-item>
+                            <menu-item name="Cheeseburger w/ Fries" price="69"></menu-item>
+                        </menu-content>
+                        <menu-content name="Noodles" columns="Price">
+                            <menu-item name="Pansit Canton" price="25"></menu-item>
+                        </menu-content>
+                    </menu-section>
+                </div>
+            </div>
+            <div class="face back cover-page back-cover">
+                <div class="cover-content">
+                    <h2>Thank You!</h2>
+                    <p>Follow us on social media</p>
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </div>
+            </div>
         </div>
 
-
-        <!-- FRAPPE -->
-
-        <div class="section" id="frappeDIV">
-            <h2 class="h2menu">FRAPPE</h2>
-
-            <div class="sub">Coffee Based</div>
-            <table>
-                <tr>
-                    <th>Item</th>
-                    <th>16oz</th>
-                    <th>22oz</th>
-                    <th>1L</th>
-                </tr>
-                <tr>
-                    <td>CO1 Javachip</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>CO2 Dark Mocha</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>CO3 Coffee Jelly</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>CO4 Mocha Jelly</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>CO5 Caramel Coffee</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>CO6 Toffee Caramel</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-            </table>
-
-            <div class="sub">Cream Based</div>
-            <table>
-                <tr>
-                    <th>Item</th>
-                    <th>16oz</th>
-                    <th>22oz</th>
-                    <th>1L</th>
-                </tr>
-                <tr>
-                    <td>CR1 Strawberry Jam</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>CR2 Dark Mocha Mint</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>CR3 Cookie Crumble</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>CR4 Cookies and Cream</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>CR5 Taro Cheesecake</td>
-                    <td>59</td>
-                    <td>69</td>
-                    <td>89</td>
-                </tr>
-            </table>
-        </div>
     </div>
-    <section id="Foodsection">
-        <div id="motherDIV2">
-            <!-- OTHER DRINKS -->
-            <div class="section" id="other-drinks">
-                <h2 class="h2menu">OTHER DRINKS</h2>
+</div>
 
-                <div class="sub">Dairy Boba</div>
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>16oz</th>
-                        <th>22oz</th>
-                        <th>1L</th>
-                    </tr>
-                    <tr>
-                        <td>DB1 Strawberry</td>
-                        <td>45</td>
-                        <td>55</td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>DB2 Taro</td>
-                        <td>45</td>
-                        <td>55</td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>DB3 Matcha</td>
-                        <td>45</td>
-                        <td>55</td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>DB4 Dark Choco</td>
-                        <td>45</td>
-                        <td>55</td>
-                        <td>95</td>
-                    </tr>
-                </table>
+<div class="controls">
+    <button id="prev-btn" aria-label="Previous Page">
+        <i class="fa-solid fa-caret-left"></i>
+    </button>
+    <button id="next-btn" aria-label="Next Page">
+        <i class="fa-solid fa-caret-right"></i>
+    </button>
+</div>
 
-                <div class="sub">Fruit Tea</div>
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>16oz</th>
-                        <th>22oz</th>
-                    </tr>
-                    <tr>
-                        <td>FT1 Lychee</td>
-                        <td>35</td>
-                        <td>45</td>
-                    </tr>
-                    <tr>
-                        <td>FT2 Green Apple</td>
-                        <td>35</td>
-                        <td>45</td>
-                    </tr>
-                    <tr>
-                        <td>FT3 Blueberry</td>
-                        <td>35</td>
-                        <td>45</td>
-                    </tr>
-                    <tr>
-                        <td>FT4 Strawberry</td>
-                        <td>35</td>
-                        <td>45</td>
-                    </tr>
-                    <tr>
-                        <td>FT5 Lemon</td>
-                        <td>35</td>
-                        <td>45</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="section" id="other-drinks">
-                <div class="sub">Soda Pop</div>
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>16oz</th>
-                        <th>22oz</th>
-                    </tr>
-                    <tr>
-                        <td>SP1 Lychee</td>
-                        <td>60</td>
-                        <td>75</td>
-                    </tr>
-                    <tr>
-                        <td>SP2 Green Apple</td>
-                        <td>60</td>
-                        <td>75</td>
-                    </tr>
-                    <tr>
-                        <td>SP3 Blueberry</td>
-                        <td>60</td>
-                        <td>75</td>
-                    </tr>
-                    <tr>
-                        <td>SP4 Strawberry</td>
-                        <td>60</td>
-                        <td>75</td>
-                    </tr>
-                </table>
-
-                <div class="sub">Hot Drinks</div>
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>12oz</th>
-                    </tr>
-                    <tr>
-                        <td>HD1 Americano</td>
-                        <td>39</td>
-                    </tr>
-                    <tr>
-                        <td>HD2 Caramel Macchiato</td>
-                        <td>59</td>
-                    </tr>
-                    <tr>
-                        <td>HD3 Hazelnut</td>
-                        <td>59</td>
-                    </tr>
-                    <tr>
-                        <td>HD4 Spanish Latte</td>
-                        <td>59</td>
-                    </tr>
-                    <tr>
-                        <td>HD5 Chocolate</td>
-                        <td>59</td>
-                    </tr>
-                    <tr>
-                        <td>HD6 Vanilla</td>
-                        <td>59</td>
-                    </tr>
-                    <tr>
-                        <td>HD7 Purple Yam Latte</td>
-                        <td>59</td>
-                    </tr>
-                    <tr>
-                        <td>HD8 Wintermelon</td>
-                        <td>59</td>
-                    </tr>
-                </table>
-
-                <div class="sub">Add-Ons</div>
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td>Pearl</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>Nata</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>Crystal Boba</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>Coffee Jelly</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>Whipcream</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>Cheesecake</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>Syrup</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>Espresso Shot</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>Crushed Oreo</td>
-                        <td>20</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="section" id="snacks">
-                <h2 class="h2menu">Buy 1 Take 1 Sandwiches</h2>
-
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td>Burger Sandwich</td>
-                        <td>59</td>
-                    </tr>
-                    <tr>
-                        <td>Cheese Burger</td>
-                        <td>69</td>
-                    </tr>
-                    <tr>
-                        <td>Ham Sandwich</td>
-                        <td>59</td>
-                    </tr>
-                    <tr>
-                        <td>Ham with Cheese</td>
-                        <td>69</td>
-                    </tr>
-                    <tr>
-                        <td>Egg Sandwich</td>
-                        <td>59</td>
-                    </tr>
-                    <tr>
-                        <td>Egg Sandwich w/ Cheese</td>
-                        <td>69</td>
-                    </tr>
-                    <tr>
-                        <td>Classic Hotdog</td>
-                        <td>69</td>
-                    </tr>
-                    <tr>
-                        <td>Classic Hotdog w/ Cheese</td>
-                        <td>79</td>
-                    </tr>
-                </table>
-
-                <h2 class="h2menu">Siomai / Hotdog / Lumpia</h2>
-
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td>Pork Siomai</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>Lumpia Shanghai</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>Hotdog</td>
-                        <td>20</td>
-                    </tr>
-                </table>
-
-                <h2 class="h2menu">Fries</h2>
-                <div class="sub">Fries Flavor: Cheese, Barbeque, Sweet & Sour</div>
-
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td>Fries (Large)</td>
-                        <td>50</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="section" id="snacks">
-                <h2 class="h2menu">Cheese Sticks</h2>
-
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td>6 Pcs</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>10 Pcs</td>
-                        <td>30</td>
-                    </tr>
-                    <tr>
-                        <td>18 Pcs</td>
-                        <td>50</td>
-                    </tr>
-                </table>
-
-                <h2 class="h2menu">Street Food</h2>
-
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td>Kikiam</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>Squid Ball</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>Fishball</td>
-                        <td>20</td>
-                    </tr>
-                </table>
-
-                <h2 class="h2menu">Combo Snacks</h2>
-
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td>Burger w/ Fries</td>
-                        <td>59</td>
-                    </tr>
-                    <tr>
-                        <td>Cheeseburger w/ Fries</td>
-                        <td>69</td>
-                    </tr>
-                </table>
-
-                <h2 class="h2menu">Noodles</h2>
-
-                <table>
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td>Pansit Canton</td>
-                        <td>25</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </section>
-</section>
+<script src="/js/menu.js"></script>
 </body>
 </html>
