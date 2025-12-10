@@ -1,9 +1,9 @@
 # Bigger Brew Cafe Website Project
 
 <p align="center">
-  <img src="showcase/home-0.png" width="30%" />
-  <img src="showcase/about-0.png" width="30%" />
-  <img src="showcase/faq-0.png" width="30%" />
+  <img src="showcase/home-0.jpg" width="30%" />
+  <img src="showcase/about-0.jpg" width="30%" />
+  <img src="showcase/faq-0.jpg" width="30%" />
 </p>
 
 [**View Full Showcase**](SHOWCASE.md)
