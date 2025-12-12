@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="/css/aboutus.css">
     <link rel="icon" type="image/x-icon" href="/images/ui/ui-bigger-brew.png">
     <script type="module" src="/js/components.js"></script>
+    <script>
+        const base = document.createElement('base');
+        base.href = window.location.hostname.includes('github.io')
+            ? '/intro-to-computing-website-project/'
+            : '/';
+        document.head.appendChild(base);
+    </script>
 </head>
 <body>
 <nav-bar></nav-bar>

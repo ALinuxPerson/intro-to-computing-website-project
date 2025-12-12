@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script type="module" src="/js/components.js"></script>
     <title>Comments/Suggestions - Bigger Brew</title>
+    <script>
+        const base = document.createElement('base');
+        base.href = window.location.hostname.includes('github.io')
+            ? '/intro-to-computing-website-project/'
+            : '/';
+        document.head.appendChild(base);
+    </script>
 </head>
 <body>
 <nav-bar></nav-bar>
