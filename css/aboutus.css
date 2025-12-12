@@ -13,7 +13,7 @@ body {
 }
 
 #about-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/backgrounds/bg-about-hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/backgrounds/bg-about-hero.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -104,7 +104,7 @@ body {
 
 /* Crew Section */
 #crew-section {
-    background-image: linear-gradient(rgba(77, 47, 27, 0.95), rgba(77, 47, 27, 0.9)), url('/images/backgrounds/bg-crew-hero.jpeg');
+    background-image: linear-gradient(rgba(77, 47, 27, 0.95), rgba(77, 47, 27, 0.9)), url('../images/backgrounds/bg-crew-hero.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

@@ -29,7 +29,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('/images/backgrounds/bg-menu.jpg');
+    background-image: url('../images/backgrounds/bg-menu.jpg');
     background-size: cover;
     background-position: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;

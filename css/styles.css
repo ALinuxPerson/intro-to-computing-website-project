@@ -22,7 +22,7 @@ body {
 #about {
     min-height: 80vh;
     width: 100%;
-    background-image: url("/images/backgrounds/bg-texture-brown.jpg");
+    background-image: url("../images/backgrounds/bg-texture-brown.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -67,7 +67,7 @@ body {
 #heromenu {
     min-height: 80vh;
     width: 100%;
-    background-image: url("/images/backgrounds/bg-home-menu-preview.jpg");
+    background-image: url("../images/backgrounds/bg-home-menu-preview.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -191,7 +191,7 @@ body {
 .hero {
     position: relative;
     min-height: 50vh;
-    background: url("/images/backgrounds/bg-quote-overlay.jpg") center/cover no-repeat;
+    background: url("../images/backgrounds/bg-quote-overlay.jpg") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,7 +243,7 @@ body {
     min-height: 50vh;
     padding: 4rem 2rem;
     background-size: cover;
-    background: #4d2f1b url(/images/backgrounds/bg-footer.jpg) no-repeat center;
+    background: #4d2f1b url(../images/backgrounds/bg-footer.jpg) no-repeat center;
 }
 
 #map {
@@ -451,7 +451,7 @@ p.visit {
 /* MenuCoffee */
 #coffee {
     position: relative;
-    background-image: url(/images/backgrounds/bg-menu-drinks.jpg);
+    background-image: url(../images/backgrounds/bg-menu-drinks.jpg);
     background-repeat: no-repeat;
     background-size: 100vw;
     height: 100vh;
@@ -507,7 +507,7 @@ table td:last-child {
 #Foodsection {
     position: relative;
     top: 6rem;
-    background-image: url(/images/backgrounds/bg-menu-food.jpg);
+    background-image: url(../images/backgrounds/bg-menu-food.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 50rem;
@@ -516,7 +516,7 @@ table td:last-child {
 /* Feedback Page Styles */
 #feedback-hero {
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/backgrounds/bg-feedback-hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/backgrounds/bg-feedback-hero.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

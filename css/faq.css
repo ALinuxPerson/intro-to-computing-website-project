@@ -2,7 +2,7 @@
     padding-top: 10vh;
     min-height: 100vh;
     background-color: #4d2f1b;
-    background-image: url("/images/backgrounds/bg-texture-brown.jpg");
+    background-image: url("../images/backgrounds/bg-texture-brown.jpg");
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;

@@ -4,17 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop Menu</title>
-    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script type="module" src="/js/components.js"></script>
-    <script type="module" src="/js/components/menu.js"></script>
-    <script>
-        const base = document.createElement('base');
-        base.href = window.location.hostname.includes('github.io')
-            ? '/intro-to-computing-website-project/'
-            : '/';
-        document.head.appendChild(base);
-    </script>
+    <script type="module" src="../js/components.js"></script>
+    <script type="module" src="../js/components/menu.js"></script>
 </head>
 <body>
 <nav-bar></nav-bar>
@@ -23,13 +16,13 @@
         <div class="paper" id="p1">
             <div class="face front cover-page">
                 <div class="cover-content">
-                    <img src="/images/ui/ui-menu-book-cover.jpg" alt="cover">
+                    <img src="../images/ui/ui-menu-book-cover.jpg" alt="cover">
                 </div>
             </div>
             <div class="face back">
                 <div class="page-content">
                     <menu-section>
-                        <menu-img src="/images/products/drink-coffee-latte.jpg" alt="Coffee"></menu-img>
+                        <menu-img src="../images/products/drink-coffee-latte.jpg" alt="Coffee"></menu-img>
                         <menu-content name="Iced Coffee" columns="16oz,22oz,1L">
                             <menu-item code="IC1" name="Iced Americano" 16oz="29" 22oz="39" 1l="59"></menu-item>
                             <menu-item code="IC2" name="Coffee Latte" 16oz="49" 22oz="59" 1l="79"></menu-item>
@@ -53,7 +46,7 @@
                             <menu-item code="SC5" name="Dirty Matcha" 16oz="80" 22oz="90"></menu-item>
                             <menu-item code="SC6" name="Cafe Con Leehe" 16oz="80" 22oz="90"></menu-item>
                         </menu-content>
-                        <menu-img src="/images/products/drink-taro.jpg" alt="Taro"></menu-img>
+                        <menu-img src="../images/products/drink-taro.jpg" alt="Taro"></menu-img>
                     </menu-section>
                 </div>
             </div>
@@ -166,7 +159,7 @@
                             <menu-item code="PM5" name="Okinawa" 16oz="55" 22oz="64" 1l="85"></menu-item>
                             <menu-item code="PM6" name="Cheesecake" 16oz="55" 22oz="64" 1l="85"></menu-item>
                         </menu-content>
-                        <menu-img src="/images/products/drink-dark-choco-milktea.jpg"
+                        <menu-img src="../images/products/drink-dark-choco-milktea.jpg"
                                   alt="Dark Choco Milktea"></menu-img>
                     </menu-section>
                 </div>
@@ -174,7 +167,7 @@
             <div class="face back">
                 <div class="page-content">
                     <menu-section>
-                        <menu-img src="/images/products/drink-milo-dino.jpg" alt="Milo Dinosheeesh!!!"></menu-img>
+                        <menu-img src="../images/products/drink-milo-dino.jpg" alt="Milo Dinosheeesh!!!"></menu-img>
                         <menu-content name="Signature Milktea" columns="16oz,22oz">
                             <menu-item code="SM1" name="Choco Butternut Donut" 16oz="75" 22oz="85"></menu-item>
                             <menu-item code="SM2" name="Strawberry Cheesecake" 16oz="75" 22oz="85"></menu-item>
@@ -194,7 +187,7 @@
                             <menu-item code="CO5" name="Caramel Coffee" 16oz="59" 22oz="69" 1l="89"></menu-item>
                             <menu-item code="CO6" name="Toffee Caramel" 16oz="59" 22oz="69" 1l="89"></menu-item>
                         </menu-content>
-                        <menu-img src="/images/products/drink-mango-berry-frappe.jpg"
+                        <menu-img src="../images/products/drink-mango-berry-frappe.jpg"
                                   alt="Mango Berry Frappe"></menu-img>
                     </menu-section>
                 </div>
@@ -239,7 +232,7 @@
             </div>
             <div class="face back">
                 <div class="page-content">
-                    <img src="/images/products/drink-hot.jpg" alt="Hot Drinks"
+                    <img src="../images/products/drink-hot.jpg" alt="Hot Drinks"
                          style="width: 15rem; display: block; margin: 0 auto; border-radius: 1rem;">
                     <menu-section>
 
@@ -336,6 +329,6 @@
     </button>
 </div>
 
-<script src="/js/menu.js"></script>
+<script src="../js/menu.js"></script>
 </body>
 </html>

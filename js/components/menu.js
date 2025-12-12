@@ -68,8 +68,9 @@ class MenuSection extends HTMLElement {
             }
         }
 
+        const basePath = window.location.pathname.includes('/pages/') ? '..' : '.';
         this.shadowRoot.innerHTML = `
-            <link rel="stylesheet" href="/css/menu.css">
+            <link rel="stylesheet" href="${basePath}/css/menu.css">
             <div class="split-container">
                 ${generated}
             </div>

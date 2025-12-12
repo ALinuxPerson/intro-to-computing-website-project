@@ -77,6 +77,8 @@ class FooterSection extends HTMLElement {
         const mapContainer = this.shadowRoot.getElementById('map');
         if (!mapContainer) return;
 
+        const basePath = window.location.pathname.includes('/pages/') ? '..' : '.';
+
         const CONFIG = {
             coords: [14.328167733369083, 120.93795763559015],
             mapZoom: 17,
@@ -86,7 +88,7 @@ class FooterSection extends HTMLElement {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
             },
             logoIcon: {
-                url: '/images/ui/ui-bb-marker.png',
+                url: `${basePath}/images/ui/ui-bb-marker.png`,
                 size: [80, 80],
                 anchor: [40, 80],
             },
@@ -120,9 +122,10 @@ class FooterSection extends HTMLElement {
     }
 
     render() {
+        const basePath = window.location.pathname.includes('/pages/') ? '..' : '.';
         this.shadowRoot.innerHTML = `
-            <link rel="stylesheet" href="/css/styles.css">
-            <link rel="stylesheet" href="/css/privacy.css">
+            <link rel="stylesheet" href="${basePath}/css/styles.css">
+            <link rel="stylesheet" href="${basePath}/css/privacy.css">
             <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
             
